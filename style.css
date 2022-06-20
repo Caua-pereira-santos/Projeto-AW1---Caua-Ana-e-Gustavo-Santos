@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+.menu_topics {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.menu_cart {
+    list-style: none;
+    display: flex;
+}
+
+ul li a {
+    color: inherit;
+}
+
+.menu_li {
+    margin: 0 15px;
+    font-family: muli, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: #F26FCF;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin: auto 80px;
+}
+
+header {
+    padding: 30px;
+    background-color: #000;  
+}
