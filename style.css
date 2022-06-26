@@ -71,3 +71,14 @@ footer {
   margin: 0 6px;
 }
 
+.cart {
+  margin: 0 12px;
+}
+
+#copy {
+  color: #f26fcf;
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
