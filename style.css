@@ -56,3 +56,18 @@ footer {
   font-style: normal;
   color: #f26fcf;
 }
+
+.logo {
+  font-family: 'Courgette', cursive;
+  color: #f26fcf;
+}
+
+.pesquisa {
+  display: flex;
+  justify-content: center;
+}
+
+.search {
+  margin: 0 6px;
+}
+
