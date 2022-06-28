@@ -1,0 +1,15 @@
+label {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+}
+
+.input {
+    margin-bottom: 30px;
+    padding-top: 10px;
+}
+
+.formulario_classe {
+    display:block;
+    align-content: center;
+}
