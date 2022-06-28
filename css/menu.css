@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+  }
+  
+  header {
+    padding: 30px;
+    background-color: #000;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: center;
+    margin: auto 80px;
+  }
+
+  ul li a {
+    color: inherit;
+  }
+  .menu_topics {
+    list-style: none;
+   display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menu_li {
+    margin: 0 15px;
+    font-family: muli;
+    font-weight: 300;
+    font-style: normal;
+    color: #f26fcf;
+    justify-content: center;
+    align-items: center;
+  }
+  

@@ -1,0 +1,36 @@
+footer {
+    padding: 30px;
+    background-color: #000;
+  }
+  
+  .menu_fo {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .menu_li_fo {
+    margin: 0 50px;
+    font-family: muli;
+    font-weight: 300;
+    font-style: normal;
+    color: #f26fcf;
+  }
+
+  .copy {
+    color: #f26fcf;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+  }
+
+  ul li a {
+    color: inherit;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+  }
