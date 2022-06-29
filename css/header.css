@@ -1,3 +1,6 @@
+/*Parte do CSS adicionada para o header por Ana Paula*/
+/*Adicionada cor ao header, organizados os elementos com margin, display e justify-content*/
+
 * {
   margin: 0;
   padding: 0;
@@ -15,7 +18,7 @@ nav {
   justify-content: space-between;
   margin: auto 80px;
 }
-
+ /*Inicia o CSS para a logo e po campo de pesquisa por Ana Paula*/
 .logo {
   font-family: "Courgette", cursive;
   color: #f26fcf;
@@ -29,6 +32,7 @@ nav {
 .search {
   margin: 0 6px;
 }
+/*Termina o CSS*/
 
 .cart {
   margin: 0 12px;
