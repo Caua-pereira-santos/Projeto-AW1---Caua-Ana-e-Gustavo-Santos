@@ -1,105 +1,53 @@
-<!DOCTYPE html> <!--Estrutura básica do HTML-->
-
-<html lang="en"> <!--Configuração de idioma-->
-
-
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-
-    <meta charset="UTF-8">
-
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link href="css/contato.css" type="text/css" rel="stylesheet"> <!--Linkagem com CSS externo-->
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@400;500&display=swap" rel="stylesheet"> <!--Importação da fonte Cormorant-->
-
-    <title>Contato</title>
-
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="css/contato.css" type="text/css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@400;500&display=swap" rel="stylesheet">
+<title>Contato</title>
 </head>
 
-
 <body>
+    <!--Titulo que irá aparecer no centro da página-->
+<h1 class="titulo">CONTATO</h1>
 
+<!--Classe responsável pela configuração do forms-->
+<div class="formulario">
+    <form action="#" method="post">
+        <!--Campo nome-->
+        <div class="campos">
+            <label for="Nome">Nome</label>
+            <input name="Nome" class="campo_inside" type="name" pattern="^[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]+$"
+                required>
+        </div>
 
-    <h1 class="titulo">CONTATO</h1> <!--Titulo que irá aparecer no centro da página-->
+        <!--Campo Telefone-->
+        <div class="campos">
+            <label for="telefone">Telefone</label>
+            <input name="Telefone" class="campo_inside" type="tel" pattern="[0-9]{9}" required>
+        </div>
 
-
-    <div class="formulario"> <!--Classe responsável pela configuração do forms-->
-
-        <form action="#" method="post">
-
-
-            <!--Campo Nome-->
-
-            
-
-            <div class="campos">
-
-                <label for="Nome">Nome</label>
-
-                <input name="Nome" class="campo_inside" type="name" pattern="^[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]+$"
-
-                    required>
-
-            </div>
-
-
-            <!--Campo Telefone-->
-
-
-            <div class="campos">
-
-                <label for="telefone">Telefone</label>
-
-                <input name="Telefone" class="campo_inside" type="tel" pattern="[0-9]{9}" required>
-
-            </div>
-
-
-            <!--Campo E-mail-->
-
-
-            <div class="campos">
-
-                <label for="email">E-mail</label>
-
-                <input name="Email" class="campo_inside" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
-
-            </div>
-
-
-            <!--Campo Mensagem-->
-
-
-            <div class="campos">
-
-                <label for="Mensagem">Mensagem</label>
-
-                <textarea name="Mensagem" class="campo_inside" required></textarea>
-
-            </div>
-
-
-            <!--Botão de enviar-->
-
-
-            <div class="botao">
-
-                <button type="submit" class="botao_contato">ENVIAR</button>
-
-            </div>
-
-    </div>
-
-    </form>
-
+        <!--Campo E-mail-->
+        <div class="campos">
+            <label for="email">E-mail</label>
+            <input name="Email" class="campo_inside" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+        </div>
+        
+            <!--Campo Mensagem-->
+        <div class="campos">
+            <label for="Mensagem">Mensagem</label>
+            <textarea name="Mensagem" class="campo_inside" required></textarea>
+        </div>
+        <!--Botão de enviar-->
+        <div class="botao">
+            <button type="submit" class="botao_contato">ENVIAR</button>
+        </div>
+</div>
+</form>
 </body>
-
 </html>
