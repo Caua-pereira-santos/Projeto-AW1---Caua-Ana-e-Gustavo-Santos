@@ -3,3 +3,4 @@
 # Integrantes do projeto: Ana Paula, Cauã Santos e Gustavo Santos
 
 ## Wireframes: https://app.diagrams.net/#G1OELBgVg8Gq9hLkmagrzIKCyeRgYpuCQf
+## Tabela para Acompanhamento de Projetos: https://docs.google.com/spreadsheets/d/1qbz8SfPb94_j6BmjKWv03nW_qe1EzR296wtcUUsW9ts/edit#gid=0
