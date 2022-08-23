@@ -49,11 +49,8 @@
     height: 450px;
     width: 350px;
     background-color: rgb(255, 222, 222);
-}
-
-.div_casamentos_ocasioes img {
-    display: flex;
-    align-self: center;
+    align-items: center;
+    justify-content: center;
 }
 
 .div_casamentos_ocasioes p {
