@@ -8,7 +8,7 @@
     
     form {
       padding: 30px 30px 30px 30px;
-      background-color: #fff2cc;
+      background-color: #F29EAC; /*Cor de fundo do formulário*/
     }
     /*Padronização dos campos Nome, Telefone, E-mail e Mensagem*/
     .campos {
@@ -17,6 +17,8 @@
       margin-bottom: 30px;
       font-family: 'Cormorant', serif;
       font-weight: 600;
+      color: white;
+  
     }
     
     /*Padronização dos campos Nome, Telefone, E-mail e Mensagem*/
@@ -34,13 +36,14 @@
 
     /* Configuração do botão de enviar*/
     .botao_contato{
-      background: #ffccff;
-      border-color: #ffccff;
+      background: #000000; /*Cor interna do botão*/
+      border-color: #000000; /*Linha externa do botão enviar*/
       height: 50px;
       width: 100px;
       border-radius: 10px;
       font-family: 'Cormorant', serif;
       font-weight: 600;
+      color: white;
     }
 
     /*Configuração do titulo (Contato) que irá aparecer na página*/
