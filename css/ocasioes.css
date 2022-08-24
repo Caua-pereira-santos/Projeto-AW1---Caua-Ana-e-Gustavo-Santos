@@ -45,23 +45,31 @@
 
 .div_casamentos_ocasioes {
     display: flex;
-    align-items: center;
-    height: 450px;
+    height: 550px;
     width: 350px;
     background-color: rgb(255, 222, 222);
     align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.div_aniversarios_ocasioes {
+    display: flex;
+    height: 550px;
+    width: 350px;
+    background-color: rgb(255, 222, 222);
+    align-items: center;
+    flex-direction: column;
     justify-content: center;
 }
 
 .div_casamentos_ocasioes p {
-    display: flex;
-    align-self: flex-end;
-} 
+    font-size: 15px;
+    width: 260px;
+}
 
-.div_aniversarios_ocasioes {
-    display: flex;
-    height: 450px;
-    width: 350px;
-    background-color: rgb(255, 222, 222);
+.div_aniversarios_ocasioes p {
+    font-size: 15px;
+    width: 260px;
 }
 
