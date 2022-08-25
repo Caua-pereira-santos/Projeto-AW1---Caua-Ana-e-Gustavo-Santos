@@ -133,7 +133,63 @@
     background-color: rgb(255, 222, 222);
 }
 
+/*Cupcakes*/
 
-  
-  
+.section-cupcakes {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin: auto 150px;
+}
 
+.article-cupcakes {
+  display: flex;
+  height: 380px;
+  width: 250px;
+  background-color: rgb(255, 222, 222);
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+.article-cupcakes:hover {
+  cursor: pointer;
+  transform: scale(1.09); 
+  box-shadow: 0 10px 10px rgba(0,0,0,0.35);
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+.article-cupcakes p {
+  font-size: 18px;
+  margin: 8px;
+}
+
+.section-cupcakes a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.titulo-cupcakes {
+  font-weight: 400;
+  margin-left: 120px;
+  color: #fff;
+}
+
+.estilo-titulo-cupcakes {
+  background-image: linear-gradient(to right, rgb(220, 41, 251) , rgb(255, 92, 174));
+  width: 1280px;
+  height: 20px;
+  margin-left: 120px;
+  margin-bottom: 20px;
+}
+
+.p-cupcakes {
+  display: flex;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 20px;
+  text-align: justify;
+  width: 1200px;
+  margin-left: 150px;
+}
