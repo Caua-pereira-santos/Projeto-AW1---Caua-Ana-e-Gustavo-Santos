@@ -196,21 +196,77 @@
 
 /*Detalhes do produto*/
 
-.categoria-cupcakes-detalhes {
-  font-weight: 400;
-  color: #000;
+.modal-container hr {
+  width: 50vw;
+  margin: 0;
 }
 
-.section-detalhes {
+.modal-container {
+  width: 100vw;
+  position: fixed;
   display: flex;
+  z-index: 999;
   justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 550px;
-  height: 450px;
 }
 
-.article3-detalhes {
+.modal {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  padding: 30px;
+  background-color: rgb(255, 245, 203);
+  border-radius: 8px;
+  width: 50%;
 }
+
+.active {
+  display: flex;
+}
+
+.active .modal {
+  animation: modal .4s;
+}
+
+@keyframes modal {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -60px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+span {
+  margin: 10px auto;
+}
+
+.orgs {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin: 0 80px;
+}
+
+.orgs p {
+  font-size: larger;
+}
+
+.adcCupcake {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: rgb(252, 194, 223);
+  cursor: pointer;
+  border: none;
+}
+
+ @media (max-width: 500px) {
+  .modal {
+    padding: 10px;
+    width: 80%;
+  }   
+
+  span, .orgs button {
+    font-size: smaller;
+  }
+ }
