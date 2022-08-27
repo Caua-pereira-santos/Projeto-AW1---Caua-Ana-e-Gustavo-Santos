@@ -1,6 +1,8 @@
-/* css para contato linha 3 até 62 */
+* {
+  list-style-type: none;
+ }
 
-
+ /* css para contato linha 3 até 62 */
 /* CONTATO */
 .formulario{
   display: flex;
@@ -270,3 +272,60 @@ span {
     font-size: smaller;
   }
  }
+
+ /*Carrinho*/
+
+.lista-carrinho {
+  display: flex;
+  justify-content: center;
+ }
+
+ .lista-carrinho ul li {
+  font-size: 20px;
+  padding: 12px;
+ }
+
+ .titulo-cupcake-carrinho {
+  font-size: 25px;
+ }
+
+ .lista-carrinho button {
+  display: flex;
+  align-self: flex-end;
+  background-color: rgb(246, 182, 254);
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+ }
+
+ .hr-carrinho {
+  display: flex;
+  justify-content: center;
+  width: 400px;
+  margin-top: 40px;
+ }
+
+ .botoes-carrinho {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+ }
+
+ .total-preco {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  font-size: 23px;
+ }
+
+ .botoes-carrinho button {
+  margin: 0 20px;
+  padding: 7px;
+  background-color: rgb(246, 182, 254);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+ }
+
+ 

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <title>Carrinho</title><!--Ana Paula: página da listagem de produtos-->
+</head>
+<body>
+    
+    <h1 class="titulo">CARRINHO</h1>
+
+    <div class="lista-carrinho"><!--Ana Paula: cada produto tem informações de nome, quem vende, preço e quantidade
+    organizados em lista. A lista será atualizada conforme mais produtos forem adicionados ao carrinho-->
+        <ul>
+            <li class="titulo-cupcake-carrinho"><b>Chocolate Peanut Butter</b></li>
+            <li>Vendido por Toronto Cupcake</li>
+            <li>R$XX,XX</li>
+            <li>Quantidade: <input type="number" class="qtdProdutos"/></li>
+        </ul>
+        <button type="submit" class="excluirProduto">Excluir item</button><!--Ana Paula: este botão exclui um item individual-->
+    </div>
+    <hr class="hr-carrinho"/>
+    <h3 class="total-preco"><strong>Total: </strong></h3><!--Ana Paula: o resultado calculado do preço total da compra ser disponibilizado aqui-->
+    <div class="botoes-carrinho">
+        <button type="submit" class="excluirProduto">Fazer o pedido</button><!--Ana Paula: este botão deve redirecionar para a parte de realizar o pedido-->
+        <a href="cupcakes.html"><button>Continue comprando</button></a><!--Ana Paula: este botão deve redirecionar para a página de cupcakes para o usuário continuar as compras-->
+        <button type="submit" class="excluirProduto">Limpar</button><!--Ana Paula: este botão limpa automaticamente todos os itens da lista e a deixa vazia-->
+    </div>
+</body>
+</html>
