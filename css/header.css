@@ -38,81 +38,9 @@ nav {
   margin: 0 12px;
 }
 
-/* Home */
-.container {
-  height: 25vh;
-  width: 100vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  }
-
-  .box {
-  width: 800px;
-  height: 100px;
-  display:flex;
-  background: #FFD6F5;
-  align-items: center; /* vertical */
-  justify-content: center; /* horizontal */
-  }
-
-  .box-text {
-    font-family: 'Cormorant', serif;
-    font-weight: 400;
-  }
 
 
-  .container2 {
-    height: 700px;
-    width: 100vw;
-    display: flex;
-  }
 
-  .container-box {
-      width: 100%;
-      display: flex;
-      flex-wrap: wrap;
-  }
-
-  .text {
-    font-family: 'Cormorant', serif;
-    font-weight: 400;
-    font-size: 32px;
-  }
-
-  .text2 {
-    font-family: 'Cormorant', serif;
-    font-weight: 400;
-    font-size: 21px;
-    padding: 0 40px 0 40px;
-    flex-wrap: wrap;
-  }
-
-  .item-medium-title {
-    width: 100%;
-    height: 30%;
-    align-items: center; /* vertical */
-    justify-content: center; /* horizontal */
-    display: flex;
-    padding: 0 -100px 0 -100px;
-  }
-
-  .item-text {
-    width: 100%;
-    height: 70%;
-    justify-content: center; 
-    display: flex;
-  }
-
-  #titulo2 {
-    background: #FFD6F5;
-    order: 2;
-  }
-
-  #texto2{
-    order: 1;
-  }
    
  
    

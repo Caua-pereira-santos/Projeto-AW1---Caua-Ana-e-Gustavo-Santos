@@ -1,5 +1,9 @@
 * {
   list-style-type: none;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
  }
 
  /* css para contato linha 3 até 62 */
@@ -327,5 +331,77 @@ span {
   border-radius: 5px;
   cursor: pointer;
  }
+
+ /* index */
+.center{
+  display: flex;
+ justify-content: center;
+}
+
+.box-text {
+  display: flex;
+  align-items: center; /*centraliza horizontalmente */
+  justify-content: center; /*cetraliza verticalmente */
+  width: 800px;
+  height: 100px;
+  background: #FFD6F5;
+  color: rgb(0, 0, 0);
+  font-family: 'Cormorant', serif;
+  font-weight: 400;
+ 
+}
+
+.flex-container {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  margin-left: 25px;
+}
+
+.flex-item-title {
+  width: 700px;
+  padding: 5px;
+  height: 170px;
+  margin-top: 20px;
+  line-height: 150px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  text-align: center;
+  font-size: 32px;
+}
+.flex-item-text {
+  width: 700px;
+  padding: 5px;
+  height: 450px;
+  margin-top: 20px;
+  line-height: 30px;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-size: 22px;
+}
+
+.flex-item-image-title {
+  width: 720px;
+  background: #FFD6F5;
+  height: 170px;
+  margin-top: 20px;
+  line-height: 150px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  text-align: center;
+  font-size: 32px;
+}
+
+.flex-item-image {
+  width: 700px;
+  height: 450px;
+  line-height: 150px;
+  margin-top: 14px;
+  text-align: center;
+}
+
+
+
+
 
  
