@@ -14,10 +14,13 @@
   height: 75vh;  
   margin-top: 20px;
   }
+
+  .form-contato {
+    background-color: #F29EAC; /*Cor de fundo do formulário*/
+  }
   
   form {
     padding: 30px 30px 30px 30px;
-    background-color: #F29EAC; /*Cor de fundo do formulário*/
   }
   /*Padronização dos campos Nome, Telefone, E-mail e Mensagem*/
   .campos {
@@ -457,4 +460,48 @@ span {
   font-family: 'Cormorant', serif;
   font-weight: 400;
   list-style: none;
+}
+
+
+/*Confirmar pedido*/
+
+.p-confirmar {
+  display: flex;
+  justify-content: center;
+  text-align: justify;
+  margin-top: 70px;
+  font-size: 18px;
+}
+
+.form-confirmacao {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+}
+
+.campo-confirmar {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 15px;
+}
+
+.campo-confirmar label {
+  margin-bottom: 5px;
+}
+
+.campo-confirmar input {
+  width: 500px;
+  height: 23px;
+  border-radius: 5px;
+}
+
+.form-confirmacao button {
+  width: 70px;
+  height: 30px;
+  background-color: #f3b6c0;
+  border: none;
+  border-radius: 8px;
+  margin: 10px;
 }

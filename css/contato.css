@@ -1,0 +1,55 @@
+/* CONTATO */
+.formulario{
+    display: flex;
+    justify-content: center;
+    height: 75vh;  
+    margin-top: 20px;
+    }
+    
+    form {
+      padding: 30px 30px 30px 30px;
+      background-color: #fff2cc;
+    }
+    /*Padronização dos campos Nome, Telefone, E-mail e Mensagem*/
+    .campos {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 30px;
+      font-family: 'Cormorant', serif;
+      font-weight: 600;
+    }
+    
+    /*Padronização dos campos Nome, Telefone, E-mail e Mensagem*/
+    .campo_inside {
+      padding: 20px;
+      width: 700px;
+      border: 2px  solid;
+    }
+
+    /*Configuração da posição do botão enviar*/
+    .botao {
+      display: flex;
+      float: right;
+    }
+
+    /* Configuração do botão de enviar*/
+    .botao_contato{
+      background: #ffccff;
+      border-color: #ffccff;
+      height: 50px;
+      width: 100px;
+      border-radius: 10px;
+      font-family: 'Cormorant', serif;
+      font-weight: 600;
+    }
+
+    /*Configuração do titulo (Contato) que irá aparecer na página*/
+    .titulo{
+      display: flex;
+      color: #e91e63;
+      text-align: center;
+      justify-content: center;
+      margin-top: 20px;
+      font-family: 'Cormorant', serif;
+      font-weight: 900;
+    }
