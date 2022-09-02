@@ -69,9 +69,7 @@
     font-weight: 900;
   }
  
-
-/*Código Css para Ocasiões linha 61 até 129*/
-
+/*Código Css para Ocasiões linha 73 até 129*/
 .p_ocasioes_intro {
   display: flex;
   text-align: justify;
@@ -544,3 +542,94 @@ article p {
   background-color: rgb(121, 121, 121);
   height: 0.4px;
 }
+
+/*Parte do CSS adicionada para o header e o menu de navegação por Ana Paula*/
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+header {
+  padding: 30px;
+  background-color: #000;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  margin: auto 80px;
+}
+
+ul li a {
+  color: inherit;
+}
+.menu_topics {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu_li {
+  margin: 0 15px;
+  font-family: muli;
+  font-weight: 300;
+  font-style: normal;
+  color: #f26fcf;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Header */
+/*Parte do CSS adicionada para o header por Ana Paula*/
+/*Adicionada cor ao header, organizados os elementos com margin, display e justify-content*/
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: inherit;
+}
+
+header {
+  padding: 30px;
+  background-color: #000;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin: auto 80px;
+}
+ /*Inicia o CSS para a logo e po campo de pesquisa por Ana Paula*/
+.logo {
+  font-family: "Courgette", cursive;
+  color: #f26fcf;
+}
+
+.pesquisa {
+  display: flex;
+  justify-content: center;
+}
+
+.search {
+  margin: 0 6px;
+}
+/*Termina o CSS*/
+
+.cart {
+  margin: 0 12px;
+}
+
+
+
+
+   
+ 
+   
+
+    
+  
