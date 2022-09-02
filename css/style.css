@@ -4,6 +4,7 @@
   margin: 0;
   list-style: none;
   text-decoration: none;
+  box-sizing: border-box;
  }
 
  /* css para contato linha 3 até 62 */
@@ -544,28 +545,10 @@ article p {
 }
 
 /*Parte do CSS adicionada para o header e o menu de navegação por Ana Paula*/
-
-* {
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
-  box-sizing: border-box;
-}
-
-header {
-  padding: 30px;
-  background-color: #000;
-}
-
-nav {
-  display: flex;
-  justify-content: center;
-  margin: auto 80px;
-}
-
 ul li a {
   color: inherit;
 }
+
 .menu_topics {
   list-style: none;
   display: flex;
@@ -587,13 +570,6 @@ ul li a {
 /*Parte do CSS adicionada para o header por Ana Paula*/
 /*Adicionada cor ao header, organizados os elementos com margin, display e justify-content*/
 
-* {
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
-  color: inherit;
-}
-
 header {
   padding: 30px;
   background-color: #000;
@@ -604,6 +580,7 @@ nav {
   justify-content: space-between;
   margin: auto 80px;
 }
+
  /*Inicia o CSS para a logo e po campo de pesquisa por Ana Paula*/
 .logo {
   font-family: "Courgette", cursive;
@@ -624,6 +601,39 @@ nav {
   margin: 0 12px;
 }
 
+/* Footer */
+footer {
+  padding: 30px;
+  background-color: #000;
+}
+
+.menu_fo {
+  list-style: none;
+}
+
+.menu_fo_icon {
+  display: flex;
+  margin: 0 15px;
+  padding: 0;
+  list-style: none;
+  justify-content: center;
+}
+
+.menu_li_fo {
+  display: flex;
+  justify-content: center;
+  margin: 10px 15px;
+  font-family: muli;
+  font-weight: 300;
+  font-style: normal;
+  color: #f26fcf;
+}
+
+.copy {
+  color: #f26fcf;
+  display: flex;
+  justify-content: center;
+}
 
 
 
