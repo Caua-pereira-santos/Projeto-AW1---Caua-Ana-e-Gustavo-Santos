@@ -72,16 +72,6 @@
 
 /*Código Css para Ocasiões linha 61 até 129*/
 
-.titulo {
-    display: flex;
-    color: #e91e63;
-    text-align: center;
-    justify-content: center;
-    margin-top: 20px;
-    font-family: 'Cormorant', serif;
-    font-weight: 900;
-}
-
 .titulo2 {
     display: flex;
     text-align: center;
@@ -504,4 +494,49 @@ span {
   border: none;
   border-radius: 8px;
   margin: 10px;
+}
+
+/* CSS para faqs */
+.titulo2-faqs {
+  display: flex;
+  text-align: justify;
+  font-weight: 500;
+  font-size: 18px;
+  margin-left: 350px;
+}
+
+.p-pergunta-faqs {
+  text-align: justify;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.p-resposta-faqs {
+  text-align: justify;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+article p {
+  display: inline-block;
+  margin-left: 200px;
+}
+
+.hr1 {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 150px;
+  width: 70%;
+  height: 0.1px;
+}
+
+.hr2 {
+  display: flex;
+  margin-top: 30px;
+  margin-bottom: 100px;
+  margin-left: 150px;
+  width: 80%;
+  background-color: rgb(121, 121, 121);
+  height: 0.4px;
 }
