@@ -1,32 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.typekit.net/dfp7med.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
     <link href="css/style.css" type="text/css" rel="stylesheet">
-    <title>Carrinho</title><!--Ana Paula: página da listagem de produtos-->
+
+    <title>Carrinho</title>
+    <!--Ana Paula: página da listagem de produtos-->
 </head>
+
 <body>
-    
+
+
+    <header>
+        <!--Organizados os links para navegação no site através de estrutura de lista - Ana Paula-->
+        <nav>
+            <a href="#" class="logo">TORONTO CUPCAKE</a>
+            <!--Nome do site é um link e leva até a Home, a página principal-->
+            <ul class="menu_topics">
+                <!--Lista identificada pela classe menu_topics-->
+                <li class="menu_li"><a href="#">CUPCAKES</a></li>
+                <!--Cada link dentro de um tópico da lista. Cada tópico identificado pela mesma classe-->
+                <li class="menu_li"><a href="#">OCASIÕES</a></li>
+                <li class="menu_li"><a href="#">FAQs</a></li>
+                <li class="menu_li"><a href="#">CONTATO</a></li>
+                <li class="menu_li"><a href="#">PARCEIROS</a></li>
+            </ul>
+
+            <ul class="pesquisa">
+                <!--A lupa e o campo de pesquisa estão em uma lista, identificada pela classe "pesquisa"-->
+                <li class="search">
+                    <a href="#"><img src="imagens/lupa.png" alt="search" /></a>
+                </li>
+                <li class="search">
+                    <input class="caixa_search" type="text" placeholder="Busque por produtos aqui">
+                </li>
+                <li class="cart">
+                    <a href="#"><img src="imagens/carrinho-de-compras.png" alt="cart" /></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
     <h1 class="titulo">CARRINHO</h1>
 
-    <div class="lista-carrinho"><!--Ana Paula: cada produto tem informações de nome, quem vende, preço e quantidade
+    <div class="lista-carrinho">
+        <!--Ana Paula: cada produto tem informações de nome, quem vende, preço e quantidade
     organizados em lista. A lista será atualizada conforme mais produtos forem adicionados ao carrinho-->
         <ul>
             <li class="titulo-cupcake-carrinho"><b>Chocolate Peanut Butter</b></li>
             <li>Vendido por Toronto Cupcake</li>
             <li>R$XX,XX</li>
-            <li>Quantidade: <input type="number" class="qtdProdutos"/></li>
+            <li>Quantidade: <input type="number" class="qtdProdutos" /></li>
         </ul>
-        <button type="submit" class="excluirProduto">Excluir item</button><!--Ana Paula: este botão exclui um item individual-->
+        <button type="submit" class="excluirProduto">Excluir item</button>
+        <!--Ana Paula: este botão exclui um item individual-->
     </div>
-    <hr class="hr-carrinho"/>
-    <h3 class="total-preco"><strong>Total: </strong></h3><!--Ana Paula: o resultado calculado do preço total da compra ser disponibilizado aqui-->
+    <hr class="hr-carrinho" />
+    <h3 class="total-preco"><strong>Total: </strong></h3>
+    <!--Ana Paula: o resultado calculado do preço total da compra ser disponibilizado aqui-->
     <div class="botoes-carrinho">
-        <a href="confirmar_pedido.html"><button type="submit" class="excluirProduto">Fazer o pedido</button></a><!--Ana Paula: este botão deve redirecionar para a parte de realizar o pedido-->
-        <a href="cupcakes.html"><button>Continue comprando</button></a><!--Ana Paula: este botão deve redirecionar para a página de cupcakes para o usuário continuar as compras-->
-        <button type="submit" class="excluirProduto">Limpar</button><!--Ana Paula: este botão limpa automaticamente todos os itens da lista e a deixa vazia-->
+        <a href="confirmar_pedido.html"><button type="submit" class="excluirProduto">Fazer o pedido</button></a>
+        <!--Ana Paula: este botão deve redirecionar para a parte de realizar o pedido-->
+        <a href="cupcakes.html"><button>Continue comprando</button></a>
+        <!--Ana Paula: este botão deve redirecionar para a página de cupcakes para o usuário continuar as compras-->
+        <button type="submit" class="excluirProduto">Limpar</button>
+        <!--Ana Paula: este botão limpa automaticamente todos os itens da lista e a deixa vazia-->
     </div>
 </body>
+
 </html>

@@ -2,93 +2,110 @@
 <html lang="en">
 
 <head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="css/style.css" type="text/css" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@400;500&display=swap" rel="stylesheet">
-<link href="css/footer.css" type="text/css" rel="stylesheet">
-<link href="css/header.css" type="text/css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.typekit.net/dfp7med.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <link href="css/style.css" type="text/css" rel="stylesheet">
 
-<title>Contato</title>
+    <title>Contato</title>
 </head>
 
 <body>
 
-    <header>
-        <nav><!--Adicionada a caixa de pesquisa com imagem de lupa, e a logo do site - Ana Paula-->
-            <a href="#" class="logo">TORONTO CUPCAKE</a><!--Nome do site é um link e leva até a Home, a página principal-->
 
-            <ul class="pesquisa"> <!--A lupa e o campo de pesquisa estão em uma lista, identificada pela classe "pesquisa"-->
+    <header>
+        <!--Organizados os links para navegação no site através de estrutura de lista - Ana Paula-->
+        <nav>
+            <a href="#" class="logo">TORONTO CUPCAKE</a>
+            <!--Nome do site é um link e leva até a Home, a página principal-->
+            <ul class="menu_topics">
+                <!--Lista identificada pela classe menu_topics-->
+                <li class="menu_li"><a href="#">CUPCAKES</a></li>
+                <!--Cada link dentro de um tópico da lista. Cada tópico identificado pela mesma classe-->
+                <li class="menu_li"><a href="#">OCASIÕES</a></li>
+                <li class="menu_li"><a href="#">FAQs</a></li>
+                <li class="menu_li"><a href="#">CONTATO</a></li>
+                <li class="menu_li"><a href="#">PARCEIROS</a></li>
+            </ul>
+
+            <ul class="pesquisa">
+                <!--A lupa e o campo de pesquisa estão em uma lista, identificada pela classe "pesquisa"-->
                 <li class="search">
-                    <a href="#"><img src="imagens/lupa.png" alt="search" /></a> 
+                    <a href="#"><img src="imagens/lupa.png" alt="search" /></a>
                 </li>
                 <li class="search">
                     <input class="caixa_search" type="text" placeholder="Busque por produtos aqui">
                 </li>
                 <li class="cart">
-                    <a href="#"><img src="imagens/carrinho-de-compras.png" alt="cart"/></a> 
+                    <a href="#"><img src="imagens/carrinho-de-compras.png" alt="cart" /></a>
                 </li>
-        </ul>
+            </ul>
         </nav>
     </header>
 
-
-
     <!--Titulo que irá aparecer no centro da página-->
-<h1 class="titulo">CONTATO</h1>
+    <h1 class="titulo">CONTATO</h1>
 
-<!--Classe responsável pela configuração do forms-->
-<div class="formulario">
-    <form action="#" method="post" class="form-contato">
-        <!--Campo nome-->
-        <div class="campos">
-            <label for="Nome">Nome</label>
-            <input name="Nome" class="campo_inside" type="name" pattern="^[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]+$"
-                required>
-        </div>
+    <!--Classe responsável pela configuração do forms-->
+    <div class="formulario">
+        <form action="#" method="post" class="form-contato">
+            <!--Campo nome-->
+            <div class="campos">
+                <label for="Nome">Nome</label>
+                <input name="Nome" class="campo_inside" type="name"
+                    pattern="^[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]+$" required>
+            </div>
 
-        <!--Campo Telefone-->
-        <div class="campos">
-            <label for="telefone">Telefone</label>
-            <input name="Telefone" class="campo_inside" type="tel" pattern="[0-9]{9}" required>
-        </div>
+            <!--Campo Telefone-->
+            <div class="campos">
+                <label for="telefone">Telefone</label>
+                <input name="Telefone" class="campo_inside" type="tel" pattern="[0-9]{9}" required>
+            </div>
 
-        <!--Campo E-mail-->
-        <div class="campos">
-            <label for="email">E-mail</label>
-            <input name="Email" class="campo_inside" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
-        </div>
-        
+            <!--Campo E-mail-->
+            <div class="campos">
+                <label for="email">E-mail</label>
+                <input name="Email" class="campo_inside" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                    required>
+            </div>
+
             <!--Campo Mensagem-->
-        <div class="campos">
-            <label for="Mensagem">Mensagem</label>
-            <textarea name="Mensagem" class="campo_inside" required></textarea>
-        </div>
-        <!--Botão de enviar-->
-        <div class="botao">
-            <button type="submit" class="botao_contato">ENVIAR</button>
-        </div>
-</div>
-</form>
+            <div class="campos">
+                <label for="Mensagem">Mensagem</label>
+                <textarea name="Mensagem" class="campo_inside" required></textarea>
+            </div>
+            <!--Botão de enviar-->
+            <div class="botao">
+                <button type="submit" class="botao_contato">ENVIAR</button>
+            </div>
+    </div>
+    </form>
 
 
-<br><br><b><br><br><br><br><br><br>
+    <br><br><b><br><br><br><br><br><br>
 
-<ul class="menu_fo">
-    <li class="menu_li_fo"><a href="#">SOBRE</a></li>
-        <ul class="menu_fo_icon">
-            <li class="menu_li_fo"><a href="https://twitter.com/torontocupcake"><img src="imagens/twitter.png" alt="twitter icon" /></a></li>
-            <li class="menu_li_fo"><a href="https://www.instagram.com/torontocupcake/?hl=pt"><img src="imagens/instagram.png" alt="instragram icon" /></a></li>
+        <ul class="menu_fo">
+            <li class="menu_li_fo"><a href="#">SOBRE</a></li>
+            <ul class="menu_fo_icon">
+                <li class="menu_li_fo"><a href="https://twitter.com/torontocupcake"><img src="imagens/twitter.png"
+                            alt="twitter icon" /></a></li>
+                <li class="menu_li_fo"><a href="https://www.instagram.com/torontocupcake/?hl=pt"><img
+                            src="imagens/instagram.png" alt="instragram icon" /></a></li>
+            </ul>
+            <li class="menu_li_fo">
+                <p class="copy">&copy; 2022 Toronto Cupcake</p>
+            </li>
         </ul>
-    <li class="menu_li_fo"><p class="copy">&copy; 2022 Toronto Cupcake</p></li></ul>
-    <!--Ana Paula: footer com Sobre e ícones que redirecionam para redes sociais alinhados um abaixo do outro-->
-</footer>
+        <!--Ana Paula: footer com Sobre e ícones que redirecionam para redes sociais alinhados um abaixo do outro-->
+        </footer>
 
 
 
 
 </body>
+
 </html>

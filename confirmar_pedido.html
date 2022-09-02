@@ -1,40 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.typekit.net/dfp7med.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
     <link href="css/style.css" type="text/css" rel="stylesheet">
-    <title>Confirmação do Pedido</title><!--Ana Paula: página para confirmar o pedido-->
+
+    <title>Confirmação do Pedido</title>
+    <!--Ana Paula: página para confirmar o pedido-->
 </head>
+
 <body>
+
+    <header>
+        <nav>
+            <!--Adicionada a caixa de pesquisa com imagem de lupa, e a logo do site - Ana Paula-->
+            <a href="#" class="logo">TORONTO CUPCAKE</a>
+            <!--Nome do site é um link e leva até a Home, a página principal-->
+
+            <ul class="pesquisa">
+                <!--A lupa e o campo de pesquisa estão em uma lista, identificada pela classe "pesquisa"-->
+                <li class="search">
+                    <a href="#"><img src="imagens/lupa.png" alt="search" /></a>
+                </li>
+                <li class="search">
+                    <input class="caixa_search" type="text" placeholder="Busque por produtos aqui">
+                </li>
+                <li class="cart">
+                    <a href="#"><img src="imagens/carrinho-de-compras.png" alt="cart" /></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
     <h1 class="titulo">Confirmação do pedido</h1>
 
     <p class="p-confirmar">Confirmaremos o seu pedido por telefone. Nos informe seu nome completo, número de telefone
-    e código postal nos campos abaixo, e entraremos em contato em até 10 minutos!
-    </p><!--Ana Paula: parágrafo com breve introdução situando o usuário-->
+        e código postal nos campos abaixo, e entraremos em contato em até 10 minutos!
+    </p>
+    <!--Ana Paula: parágrafo com breve introdução situando o usuário-->
 
     <div class="form-confirmacao">
-        <form action="#" method="post"><!--Ana Paula: form para inserir o nome, telefone e cep-->
-        <!--Campo nome-->
-        <div class="campo-confirmar"><!--Ana Paula: campo nome, com validação para receber todas as letras do alfabeto-->
-            <label for="Nome">Nome</label>
-            <input name="Nome" type="text" pattern="^[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]+$" required>
-        </div>   
-        <!--Campo Telefone-->
-        <div class="campo-confirmar">
-            <label for="telefone">Telefone</label><!--Ana Paula: campo telefone, com validação para receber 9 números de 0 até 9-->
-            <input name="Telefone" type="tel" pattern="[0-9]{9}" required/>
-        </div>    
-        <!--Campo Código Postal-->
-        <div class="campo-confirmar">
-            <label for="CEP">Código Postal</label><!--Ana Paula: campo código postal, com validação para o código postal canadense (6 caracacteres alfanuméricos)-->
-            <input name="CEP" placeholder="000 000" pattern="^[A-Z0-9]{3} [A-Z0-9]{3}$" required/>
-        </div>   
+        <form action="#" method="post">
+            <!--Ana Paula: form para inserir o nome, telefone e cep-->
+            <!--Campo nome-->
+            <div class="campo-confirmar">
+                <!--Ana Paula: campo nome, com validação para receber todas as letras do alfabeto-->
+                <label for="Nome">Nome</label>
+                <input name="Nome" type="text" pattern="^[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]+$" required>
+            </div>
+            <!--Campo Telefone-->
+            <div class="campo-confirmar">
+                <label for="telefone">Telefone</label>
+                <!--Ana Paula: campo telefone, com validação para receber 9 números de 0 até 9-->
+                <input name="Telefone" type="tel" pattern="[0-9]{9}" required />
+            </div>
+            <!--Campo Código Postal-->
+            <div class="campo-confirmar">
+                <label for="CEP">Código Postal</label>
+                <!--Ana Paula: campo código postal, com validação para o código postal canadense (6 caracacteres alfanuméricos)-->
+                <input name="CEP" placeholder="000 000" pattern="^[A-Z0-9]{3} [A-Z0-9]{3}$" required />
+            </div>
             <!--Botão de enviar-->
-        <button type="submit">ENVIAR</button>
+            <button type="submit">ENVIAR</button>
         </form>
     </div>
 
 </body>
+
 </html>
