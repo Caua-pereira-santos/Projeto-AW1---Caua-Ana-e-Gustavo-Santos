@@ -18,7 +18,7 @@ body {
   display: flex;
   justify-content: center;
   height: 75vh;  
-  margin-top: 20px;
+  margin-top: 25px;
   }
 
   .form-contato {
@@ -70,7 +70,7 @@ body {
     color: #e91e63;
     text-align: center;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 120px;
     font-family: 'Cormorant', serif;
     font-weight: 900;
   }
@@ -205,7 +205,7 @@ body {
 .modal-container {
   width: 100vw;
   display: flex;
-  z-index: 999;
+  z-index: 5;
   justify-content: center;
   margin-bottom: 375px;
 }
@@ -216,6 +216,7 @@ body {
   padding: 30px;
   background-color: rgb(255, 245, 203);
   border-radius: 8px;
+  margin-top: 120px;
   width: 50%;
 }
 
@@ -282,6 +283,7 @@ span {
  .lista-carrinho ul li {
   font-size: 20px;
   padding: 12px;
+  margin-top: 50px;
  }
 
  .titulo-cupcake-carrinho {
@@ -345,6 +347,7 @@ span {
   color: rgb(0, 0, 0);
   font-family: 'Cormorant', serif;
   font-weight: 400;
+  margin-top: 120px;
 }
 
 .flex-container-index {
@@ -579,6 +582,10 @@ ul li a {
 header {
   padding: 30px;
   background-color: #000;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  top: 0;
 }
 
 nav {
