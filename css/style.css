@@ -651,6 +651,19 @@ footer {
   justify-content: center;
 }
 
+/*Css Parceiros*/
+
+/*Configuração do nome central parceiros -- Cauã*/
+.titulo-parceiros {
+  display: flex;
+  color: #e91e63;
+  text-align: center;
+  justify-content: center;
+  margin-top: 20px;
+  font-family: 'Cormorant';
+  font-weight: 900;
+}
+
 
 
    
