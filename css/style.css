@@ -664,6 +664,31 @@ footer {
   font-weight: 900;
 }
 
+.Textparceiros {
+  
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.titulo-parceiros2 {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.titulo-parceiros2 p {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-right: 300px;
+  margin-left: 290px;
+  font-size: 22px;
+  color: #E91E63;
+}
+
+
+
 
 
    
