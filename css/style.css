@@ -687,6 +687,69 @@ footer {
   color: #E91E63;
 }
 
+/*Css Sobre*/
+
+.titulo-sobre {
+  display: flex;
+  color: #e91e63;
+  text-align: center;
+  justify-content: center;
+  margin-top: 20px;
+  font-family: 'Cormorant';
+  font-weight: 900;
+}
+
+.sobre-div {
+  display: flex;
+  justify-content: center;
+  margin-bottom:20px;
+  margin-top: 50px;
+  margin-right: 25px;
+  background-color: #E91E63;
+  width:1516px;
+  height: 500px;
+  
+}
+
+.config-ul {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+
+
+}
+
+.li-titulo {
+width:700px;
+padding: 5px;
+height:170px;
+margin-top: 20px;
+line-height: 150px;
+color: black;
+font-weight: bold;
+text-align: center;
+font-size: 32px;
+}
+
+.li-imagem {
+  width:700px;
+  height:450px;
+  margin-top: 90px;
+  text-align: center; 
+  margin-left: 50px;      
+}
+
+.li-textos {
+  width: 700px;
+  padding: 5px;
+  height: 450px;
+  margin-top: 20px;
+  line-height: 30px;
+  text-align: justify;
+  color: black;
+  font-size: 22px;
+}
+
 
 
 
