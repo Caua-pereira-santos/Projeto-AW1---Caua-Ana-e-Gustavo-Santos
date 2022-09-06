@@ -283,7 +283,7 @@ span {
  .lista-carrinho ul li {
   font-size: 20px;
   padding: 12px;
-  margin-top: 50px;
+  margin-top: 25px;
  }
 
  .titulo-cupcake-carrinho {
@@ -301,10 +301,13 @@ span {
  }
 
  .hr-carrinho {
-  display: flex;
-  justify-content: center;
   width: 400px;
-  margin-top: 40px;
+  justify-self: center;
+  margin-bottom: 20px;
+ }
+
+ .excluirProduto{
+  float: right;
  }
 
  .botoes-carrinho {
