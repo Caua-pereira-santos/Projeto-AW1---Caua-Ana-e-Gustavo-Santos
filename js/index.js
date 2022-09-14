@@ -8,4 +8,4 @@ function numeroPedido() {
 }
 
 var btGerarNumeroPedido = document.getElementById("btGerarNumeroPedido");
-btGerarNumeroPedido.addEventListener("click", numeroPedido);
+btGerarNumeroPedido.addEventListener("load", numeroPedido);
