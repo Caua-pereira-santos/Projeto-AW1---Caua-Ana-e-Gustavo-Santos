@@ -17,11 +17,10 @@ body {
 .formulario{
   display: flex;
   justify-content: center;
-  height: 75vh;  
   margin-top: 25px;
   }
 
-  .form-contato {
+  #form-contato {
     background-color: #F29EAC; /*Cor de fundo do formulário*/
   }
   
@@ -74,6 +73,14 @@ body {
     font-family: 'Cormorant', serif;
     font-weight: 900;
   }
+
+  .span-required{
+    margin: 0;
+    font-size: 12px;
+    color:rgba(216, 22, 22, 0.945);
+    display: none;
+    text-align: left;
+}
  
 /*Código Css para Ocasiões linha 73 até 129*/
 .p_ocasioes_intro {
