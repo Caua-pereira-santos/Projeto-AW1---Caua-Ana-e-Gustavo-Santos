@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,54 +12,62 @@
     <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
     <title>Home</title>
 </head>
+
 <body>
 
-  <header>
-    <!--Organizados os links para navegação no site através de estrutura de lista - Ana Paula-->
-    <nav>
-        <a href="#" class="logo">TORONTO CUPCAKE</a>
-        <!--Nome do site é um link e leva até a Home, a página principal-->
-        <ul class="menu_topics">
-            <!--Lista identificada pela classe menu_topics-->
-            <li class="menu_li"><a href="cupcakes.html">CUPCAKES</a></li>
-            <!--Cada link dentro de um tópico da lista. Cada tópico identificado pela mesma classe-->
-            <li class="menu_li"><a href="ocasioes.html">OCASIÕES</a></li>
+    <header>
+        <!--Organizados os links para navegação no site através de estrutura de lista - Ana Paula-->
+        <nav>
+            <a href="#" class="logo">TORONTO CUPCAKE</a>
+            <!--Nome do site é um link e leva até a Home, a página principal-->
+            <ul class="menu_topics">
+                <!--Lista identificada pela classe menu_topics-->
+                <li class="menu_li"><a href="cupcakes.html">CUPCAKES</a></li>
+                <!--Cada link dentro de um tópico da lista. Cada tópico identificado pela mesma classe-->
+                <li class="menu_li"><a href="ocasioes.html">OCASIÕES</a></li>
                 <li class="menu_li"><a href="faqs.html">FAQs</a></li>
                 <li class="menu_li"><a href="contato.html">CONTATO</a></li>
                 <li class="menu_li"><a href="parceiros.html">PARCEIROS</a></li>
+            </ul>
+
+            <ul class="pesquisa">
+                <!--A lupa e o campo de pesquisa estão em uma lista, identificada pela classe "pesquisa"-->
+                <li class="search">
+                    <a href="#"><img src="imagens/lupa.png" alt="search" /></a>
+                </li>
+                <li class="search">
+                    <input class="caixa_search" type="text" placeholder="Busque por produtos aqui">
+                </li>
+                <li class="cart">
+                    <a href="#"><img src="imagens/carrinho-de-compras.png" alt="cart" /></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="center"><a href="cupcakes.html">
+            <div class="box-text">Ver produtos</div>
+        </a>
+    </div>
+
+    <div class="center">
+        <ul class="flex-container-index">
+            <li class="flex-item-title">Comprar cupcakes nunca foi tão fácil</li>
+            <li class="flex-item-text"> <p>Comemorando nosso 11º ano de fornecimento dos cupcakes mais deliciosos do Brasil
+                para reuniões de negócios, aniversários e casamentos.</p>
+
+                <p>Somente aqui, na Toronto Cupcake, você vai encontrar os cupcakes mais fofos, molhadinhos e recheados,
+                    além de tudo isso, com temática para todos os tipos de gostos.</p>
+
+                <p>Nossos cupcakes são feitos diariamente utilizando os ingredientes da mais alta qualidade.
+                    Experimente!</p>
+            </li>
         </ul>
 
-        <ul class="pesquisa">
-            <!--A lupa e o campo de pesquisa estão em uma lista, identificada pela classe "pesquisa"-->
-            <li class="search">
-                <a href="#"><img src="imagens/lupa.png" alt="search" /></a>
-            </li>
-            <li class="search">
-                <input class="caixa_search" type="text" placeholder="Busque por produtos aqui">
-            </li>
-            <li class="cart">
-                <a href="#"><img src="imagens/carrinho-de-compras.png" alt="cart" /></a>
-            </li>
+        <ul class="flex-container-index">
+            <li class="flex-item-image"><img src="imagens/Cupcake5.jpg"></li>
+            <li class="flex-item-image-title"><a href=cupcakes.html>Escolher agora</a></li>
         </ul>
-    </nav>
-</header>
-
-<div class="center"><a href="cupcakes.html">
-    <div class="box-text">Ver produtos</div></a>
-</div>
-
-<div class="center">
-    <ul class="flex-container-index">
-        <li class="flex-item-title">Comprar cupcakes nunca foi tão fácil</li>
-        <li class="flex-item-text">Lorem ipsum dolor sit amet. Qui saepe expedita aut harum commodi non veritatis fugiat! Est voluptas exercitationem et labore cupiditate et quia quidem. Et officiis dolor sed iure voluptatem ut facilis nulla voluptate quibusdam est dolor voluptatem et animi possimus
-        Lorem ipsum dolor sit amet. Qui saepe expedita aut harum commodi non veritatis fugiat! Est voluptas exercitationem et labore cupiditate et quia quidem.
-        </li>
-      </ul>
-    
-      <ul class="flex-container-index">
-        <li class="flex-item-image"><img src="imagens/Cupcake5.jpg"></li>
-        <li class="flex-item-image-title"><a href=cupcakes.html>Escolher agora</a></li>
-      </ul>
     </div>
 
     <div class="center">
@@ -70,32 +79,36 @@
         <ul class="flex-container-index">
             <li class="flex-item-image-2"><img src="imagens/toronto001.jpg"></li>
             <div class="center">
-            <li class="center flex-item-image-title-2">Mostrar localização</li>
-        </div>
-          </ul>
-     
+                <li class="center flex-item-image-title-2">Mostrar localização</li>
+            </div>
+        </ul>
+
         <ul class="flex-container-index">
             <li class="center flex-item-title-2">Horas de Operação </li>
             <li class="center flex-item-title-2">Segunda - Sexta 7:00 - 22:00</li>
-            <li class="flex-item-text-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium tempora, itaque vel animi expedita doloribus harum quos excepturi.  Rerum, repudiandae <a href="#"><div class="small-box">Comprar agora</div></a>
+            <li class="flex-item-text-2">Encomende cupcakes online 24 horas por dia, 7 dias por semana, para o seu
+                evento especial. Entrega disponível na maioria dos dias entre 07 e 22h. <a href="#">
+                    <div class="small-box">Comprar agora</div>
+                </a>
             </li>
-          </ul>
-        </div>
+        </ul>
+    </div>
 
-        <footer>
-          <ul class="menu_fo">
-              <li class="menu_li_fo"><a href="sobre.html">SOBRE</a></li>
-              <ul class="menu_fo_icon">
-                  <li class="menu_li_fo"><a href="https://twitter.com/torontocupcake"><img src="imagens/twitter.png"
-                              alt="twitter icon" /></a></li>
-                  <li class="menu_li_fo"><a href="https://www.instagram.com/torontocupcake/?hl=pt"><img
-                              src="imagens/instagram.png" alt="instragram icon" /></a></li>
-              </ul>
-              <li class="menu_li_fo">
-                  <p class="copy">&copy; 2022 Toronto Cupcake</p>
-              </li>
-          </ul>
-          <!--Ana Paula: footer com Sobre e ícones que redirecionam para redes sociais alinhados um abaixo do outro-->
-      </footer>
+    <footer>
+        <ul class="menu_fo">
+            <li class="menu_li_fo"><a href="sobre.html">SOBRE</a></li>
+            <ul class="menu_fo_icon">
+                <li class="menu_li_fo"><a href="https://twitter.com/torontocupcake"><img src="imagens/twitter.png"
+                            alt="twitter icon" /></a></li>
+                <li class="menu_li_fo"><a href="https://www.instagram.com/torontocupcake/?hl=pt"><img
+                            src="imagens/instagram.png" alt="instragram icon" /></a></li>
+            </ul>
+            <li class="menu_li_fo">
+                <p class="copy">&copy; 2022 Toronto Cupcake</p>
+            </li>
+        </ul>
+        <!--Ana Paula: footer com Sobre e ícones que redirecionam para redes sociais alinhados um abaixo do outro-->
+    </footer>
 </body>
+
 </html>

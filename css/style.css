@@ -357,6 +357,7 @@ span {
   color: rgb(0, 0, 0);
   font-family: 'Cormorant', serif;
   font-weight: 400;
+  font-size: 24px;
   margin-top: 120px;
 }
 
@@ -419,7 +420,7 @@ span {
   width: 50%;
   background: #FFD6F5;
   height: 100px;
-  margin-top: 13px;
+  margin-top: 1px;
   line-height: 150px;
   color: rgb(0, 0, 0);
   text-align: center;
