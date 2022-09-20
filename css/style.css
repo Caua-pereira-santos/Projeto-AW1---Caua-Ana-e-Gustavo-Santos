@@ -762,11 +762,12 @@ font-size: 32px;
   font-size: 22px;
 }
 
-@media (max-width: 1500px) {
+/* CSS para telas entre 750 e 1500px*/
+@media (min-width: 750px) and (max-width: 1500px) {
   .flex-container-index {
-    display: block;
-    flex-flow: row wrap;
-    justify-content:center;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
     margin: 0;
     padding: 0;
   }
@@ -774,8 +775,10 @@ font-size: 32px;
   .center{
     display: block;
     justify-content: center;
+    align-items: center;
     margin: 0;
     padding: 0;
+    width: 100%;
    }
 
    .flex-item-title {
@@ -783,13 +786,8 @@ font-size: 32px;
     padding: 0;
     height: 170px;
     margin: 0;
-    line-height: 150px;
-    color: rgb(0, 0, 0);
-    font-weight: bold;
-    text-align: center;
-    font-size: 32px;
+  
   }
-
   .flex-item-image-title {
     width: 100%;
     background: #FFD6F5;
@@ -823,14 +821,6 @@ font-size: 32px;
     margin: 0 0 30px 0;
     padding: 0;
     text-align: center;
-  }
-
-  .secondary-title{
-    margin-top: 20px;
-    margin-bottom: 20px;
-    color: #E91E63;
-    font-size: 32px;
-    font-weight:300;
   }
 
   .flex-item-image-2 {
