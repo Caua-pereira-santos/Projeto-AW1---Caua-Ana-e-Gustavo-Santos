@@ -774,6 +774,10 @@ font-size: 32px;
     padding: 0;
   }
 
+  .control-margin {
+    margin: 0 30px;
+  }
+
   .center{
     display: block;
     align-items: center;
