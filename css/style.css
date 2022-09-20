@@ -340,6 +340,11 @@ span {
   cursor: pointer;
  }
 
+.center-responsive {
+  display: flex;
+  justify-content: center;
+}
+
  /* Index */
 .center{
  display: flex;
@@ -450,10 +455,10 @@ span {
 }
 
 .secondary-title{
-  margin-top: 20px;
   color: #E91E63;
   font-size: 32px;
-  font-weight:300;
+  font-weight: 300;
+  margin: 25px 25px;
 }
 
 .small-box {
