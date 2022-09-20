@@ -794,6 +794,7 @@ font-size: 32px;
     display: inline;
     margin: 0;
     padding: 0;
+    line-height: 70px;
   }
 
   .flex-item-image {
@@ -828,6 +829,7 @@ font-size: 32px;
     width: 100%;
     height: 100%;
     margin-top: 20px;
+    margin-bottom: 20px;
   }
 
   .box-text {
