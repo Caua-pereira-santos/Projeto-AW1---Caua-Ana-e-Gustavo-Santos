@@ -424,7 +424,7 @@ span {
   width: 50%;
   background: #FFD6F5;
   height: 100px;
-  margin-top: 1px;
+  margin-top: 25px;
   line-height: 150px;
   color: rgb(0, 0, 0);
   text-align: center;
@@ -557,6 +557,14 @@ article p {
   margin-left: 150px;
   width: 70%;
   height: 0.1px;
+}
+
+.object-fit-cover {
+  object-fit: center;
+}
+img {
+  width: 100%;
+  height: 100%;
 }
 
 .hr2 {
@@ -766,11 +774,25 @@ font-size: 32px;
   color: black;
   font-size: 22px;
 }
+@media (max-width: 421px) {
+  .small-box {
+    display: block;
+    padding: 5px 15px 5px 15px;
+  }
+}
 
+@media (max-width: 294px) {
+  .secondary-title{
+    color: #E91E63;
+    font-size: 20px;
+    font-weight: 300;
+    margin: 25px 25px;
+  }
+}
 /* CSS para telas entre 750 e 1500px*/
-@media (min-width: 750px) and (max-width: 1500px) {
+@media (max-width: 1500px) {
   .flex-container-index {
-    margin: 0;
+    margin: 0 20px;
     padding: 0;
   }
 
@@ -790,6 +812,8 @@ font-size: 32px;
     width: 100%;
     padding: 0;
     margin: 0;
+    height: 100%;
+    line-height: 70px;
   
   }
   .flex-item-image-title {
