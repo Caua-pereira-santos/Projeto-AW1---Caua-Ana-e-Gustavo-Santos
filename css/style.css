@@ -713,7 +713,6 @@ footer {
 }
 
 /*Css Sobre*/
-
 .titulo-sobre {
   display: flex;
   color: #e91e63;
@@ -733,15 +732,12 @@ footer {
   background-color: #E91E63;
   width:1516px;
   height: 500px;
-  
 }
 
 .config-ul {
   display: flex;
   flex-flow: column;
   justify-content: space-around;
-
-
 }
 
 .li-titulo {
@@ -774,6 +770,7 @@ font-size: 32px;
   color: black;
   font-size: 22px;
 }
+
 @media (max-width: 421px) {
   .small-box {
     display: block;
@@ -789,6 +786,7 @@ font-size: 32px;
     margin: 25px 25px;
   }
 }
+
 /* CSS para telas entre 750 e 1500px*/
 @media (max-width: 1500px) {
   .flex-container-index {
@@ -870,16 +868,4 @@ font-size: 32px;
     height: 100%;
     padding: 20px;
   }
-  
 }
-
-
-
-
-
-   
- 
-   
-
-    
-  
