@@ -109,6 +109,7 @@ body {
 .flex-container {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .div_casamentos_ocasioes {
@@ -142,12 +143,12 @@ body {
 }
 
 /*Cupcakes*/
-
 .section-cupcakes {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
   margin: auto 150px 38.8px;
+  flex-wrap: wrap;
 }
 
 .article-cupcakes {
@@ -787,7 +788,8 @@ font-size: 32px;
   }
 }
 
-/* CSS para telas entre 750 e 1500px*/
+/* CSS para telas entre 750 e 1500px - até a linha 873 é a parte da página index*/
+/* Gustavo Soares */
 @media (max-width: 1500px) {
   .flex-container-index {
     margin: 0 20px;
