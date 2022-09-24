@@ -731,7 +731,7 @@ footer {
   margin-top: 50px;
   margin-right: 25px;
   background-color: #E91E63;
-  width:1516px;
+  width:1512px;
   height: 500px;
 }
 
@@ -754,11 +754,11 @@ font-size: 32px;
 }
 
 .li-imagem {
-  width:700px;
-  height:450px;
-  margin-top: 90px;
+  width:400px;
+  height:400px;
+  margin-top: 20px;
   text-align: center; 
-  margin-left: 50px;      
+  margin-left: 100px;      
 }
 
 .li-textos {
