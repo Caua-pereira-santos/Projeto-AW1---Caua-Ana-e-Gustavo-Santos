@@ -735,6 +735,17 @@ footer {
   height: 500px;
 }
 
+.sobre-div-2 {
+  display: flex;
+  justify-content: center;
+  margin-bottom:20px;
+  margin-top: 50px;
+  margin-right: 25px;
+  background-color: white;
+  width:1512px;
+  height: 500px;
+}
+
 .config-ul {
   display: flex;
   flex-flow: column;
@@ -754,11 +765,20 @@ font-size: 32px;
 }
 
 .li-imagem {
-  width:400px;
-  height:400px;
+  width:450px;
+  height:450px;
   margin-top: 20px;
   text-align: center; 
   margin-left: 100px;      
+}
+
+.li-imagem-2 {
+  width:450px;
+  height:400px;
+  margin-top: 20px;
+  text-align: center; 
+  margin-left: 100px;  
+  margin-right: 50px;    
 }
 
 .li-textos {
