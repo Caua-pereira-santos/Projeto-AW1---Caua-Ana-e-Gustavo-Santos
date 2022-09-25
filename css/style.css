@@ -464,6 +464,11 @@ span {
 
 /*Confirmar pedido*/
 
+.titulo-pedido {
+  margin-top: 60px;
+  margin-left: 300px;
+}
+
 .p-confirmar {
   display: flex;
   justify-content: center;
