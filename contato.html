@@ -51,31 +51,42 @@
 
     <!--Classe responsável pela configuração do forms-->
     <div class="formulario">
-        <form action="#" method="post" class="form-contato">
+        <form action="#" method="post" id="form-contato">
+
             <!--Campo nome-->
             <div class="campos">
                 <label for="Nome">Nome</label>
-                <input name="Nome" class="campo_inside" type="name"
-                    pattern="^[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]+$" required>
+                <input name="Nome" class="campo_inside field required" type="name" oninput="validarNome()">
+                <div class="flexbox-container-contact">
+                    <span class="span-required">O campo nome deve ter no mínimo 3 caracteres</span>
+                </div>
             </div>
 
             <!--Campo Telefone-->
             <div class="campos">
                 <label for="telefone">Telefone</label>
-                <input name="Telefone" class="campo_inside" type="tel" pattern="[0-9]{9}" required>
+                <input name="Telefone" class="campo_inside field required" type="tel" onInput="validarTelefone()">
+                <div class="flexbox-container-contact">
+                    <span class="span-required">Digite um celular válido, exemplo: (99) 9999 99999</span>
+                </div>
             </div>
 
             <!--Campo E-mail-->
             <div class="campos">
                 <label for="email">E-mail</label>
-                <input name="Email" class="campo_inside" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-                    required>
+                <input name="Email" class="campo_inside field required" type="email" oninput="validarEmail()">
+                <div class="flexbox-container-contact">
+                    <span class="span-required">Digite um e-mail válido, exemplo: nome@email.com</span>
+                </div>
             </div>
 
             <!--Campo Mensagem-->
             <div class="campos">
                 <label for="Mensagem">Mensagem</label>
-                <textarea name="Mensagem" class="campo_inside" required></textarea>
+                <textarea name="Mensagem" class="campo_inside field required" oninput="validarMensagem()" ></textarea>
+                <div class="flexbox-container-contact">
+                    <span class="span-required">O campo mensagem deve ter no mínimo 30 caracteres</span>
+                </div>
             </div>
             <!--Botão de enviar-->
             <div class="botao">
@@ -101,7 +112,7 @@
             <!--Ana Paula: footer com Sobre e ícones que redirecionam para redes sociais alinhados um abaixo do outro-->
         </footer>
 
-      
+<script src="js/index.js"></script>
 </body>
 
 </html>

@@ -17,11 +17,10 @@ body {
 .formulario{
   display: flex;
   justify-content: center;
-  height: 75vh;  
   margin-top: 25px;
   }
 
-  .form-contato {
+  #form-contato {
     background-color: #F29EAC; /*Cor de fundo do formulário*/
   }
   
@@ -74,6 +73,14 @@ body {
     font-family: 'Cormorant', serif;
     font-weight: 900;
   }
+
+  .span-required{
+    margin: 0;
+    font-size: 12px;
+    color:rgba(216, 22, 22, 0.945);
+    display: none;
+    text-align: left;
+}
  
 /*Código Css para Ocasiões linha 73 até 129*/
 .p_ocasioes_intro {
@@ -102,6 +109,7 @@ body {
 .flex-container {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .div_casamentos_ocasioes {
@@ -135,12 +143,12 @@ body {
 }
 
 /*Cupcakes*/
-
 .section-cupcakes {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
   margin: auto 150px 38.8px;
+  flex-wrap: wrap;
 }
 
 .article-cupcakes {
@@ -333,11 +341,15 @@ span {
   cursor: pointer;
  }
 
+.center-responsive {
+  display: flex;
+  justify-content: center;
+}
+
  /* Index */
 .center{
  display: flex;
  justify-content: center;
- margin-bottom: 20px;
 }
 
 .box-text {
@@ -350,13 +362,14 @@ span {
   color: rgb(0, 0, 0);
   font-family: 'Cormorant', serif;
   font-weight: 400;
+  font-size: 24px;
   margin-top: 120px;
 }
 
 .flex-container-index {
   display: flex;
   flex-flow: column wrap;
-  justify-content: space-around;
+  justify-content: normal;
   margin-left: 25px;
 }
 
@@ -412,7 +425,7 @@ span {
   width: 50%;
   background: #FFD6F5;
   height: 100px;
-  margin-top: 13px;
+  margin-top: 25px;
   line-height: 150px;
   color: rgb(0, 0, 0);
   text-align: center;
@@ -443,10 +456,10 @@ span {
 }
 
 .secondary-title{
-  margin-top: 20px;
   color: #E91E63;
   font-size: 32px;
-  font-weight:300;
+  font-weight: 300;
+  margin: 25px 25px;
 }
 
 .small-box {
@@ -552,6 +565,14 @@ article p {
   height: 0.1px;
 }
 
+.object-fit-cover {
+  object-fit: center;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+
 .hr2 {
   display: flex;
   margin-top: 30px;
@@ -630,6 +651,7 @@ footer {
   width: 100%;
   bottom:0;
   left:0;
+  margin-top: 25px;
 }
 
 .menu_fo {
@@ -697,7 +719,6 @@ footer {
 }
 
 /*Css Sobre*/
-
 .titulo-sobre {
   display: flex;
   color: #e91e63;
@@ -715,17 +736,25 @@ footer {
   margin-top: 50px;
   margin-right: 25px;
   background-color: #E91E63;
-  width:1516px;
+  width:1512px;
   height: 500px;
-  
+}
+
+.sobre-div-2 {
+  display: flex;
+  justify-content: center;
+  margin-bottom:20px;
+  margin-top: 50px;
+  margin-right: 25px;
+  background-color: white;
+  width:1512px;
+  height: 500px;
 }
 
 .config-ul {
   display: flex;
   flex-flow: column;
   justify-content: space-around;
-
-
 }
 
 .li-titulo {
@@ -741,11 +770,20 @@ font-size: 32px;
 }
 
 .li-imagem {
-  width:700px;
+  width:450px;
   height:450px;
-  margin-top: 90px;
+  margin-top: 20px;
   text-align: center; 
-  margin-left: 50px;      
+  margin-left: 100px;      
+}
+
+.li-imagem-2 {
+  width:450px;
+  height:400px;
+  margin-top: 20px;
+  text-align: center; 
+  margin-left: 100px;  
+  margin-right: 50px;    
 }
 
 .li-textos {
@@ -759,13 +797,102 @@ font-size: 32px;
   font-size: 22px;
 }
 
+@media (max-width: 421px) {
+  .small-box {
+    display: block;
+    padding: 5px 15px 5px 15px;
+  }
+}
 
+@media (max-width: 294px) {
+  .secondary-title{
+    color: #E91E63;
+    font-size: 20px;
+    font-weight: 300;
+    margin: 25px 25px;
+  }
+}
 
+/* CSS para telas entre 750 e 1500px - até a linha 873 é a parte da página index*/
+/* Gustavo Soares */
+@media (max-width: 1500px) {
+  .flex-container-index {
+    margin: 0 20px;
+    padding: 0;
+  }
 
+  .control-margin {
+    margin: 0 30px;
+  }
 
-   
- 
-   
+  .center{
+    display: block;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+   }
 
-    
+   .flex-item-title {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    line-height: 70px;
   
+  }
+  .flex-item-image-title {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .flex-item-title-2 {
+    height: 100%;
+    display: inline;
+    margin: 0;
+    padding: 0;
+    line-height: 70px;
+  }
+
+  .flex-item-image {
+    width: 100%;
+    margin: 0 0 30px 0;
+    padding: 0;
+  }
+
+  .flex-item-image-2 {
+    width: 100%;
+    height: 535px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  .flex-item-text-2 {
+    width: 100%;
+    padding: 0;
+    height: 100%;
+    margin: 10px;
+  }
+
+  .flex-item-text {
+    width: 100%;
+    padding: 0;
+    height: 100%;
+    margin: 0 0 30px 0;
+  }
+  
+  .flex-item-image-title-2 {
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .box-text {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+  }
+}
