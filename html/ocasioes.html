@@ -9,14 +9,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
-    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <link href="../css/style.css" type="text/css" rel="stylesheet">
 
-    <title>Carrinho</title>
-    <!--Ana Paula: página da listagem de produtos-->
+    <title>Ocasiões</title>
 </head>
 
 <body>
-
 
     <header>
         <!--Organizados os links para navegação no site através de estrutura de lista - Ana Paula-->
@@ -36,54 +34,59 @@
             <ul class="pesquisa">
                 <!--A lupa e o campo de pesquisa estão em uma lista, identificada pela classe "pesquisa"-->
                 <li class="search">
-                    <a href="#"><img src="imagens/lupa.png" alt="search" /></a>
+                    <a href="#"><img src="../imagens/lupa.png" alt="search" /></a>
                 </li>
                 <li class="search">
                     <input class="caixa_search" type="text" placeholder="Busque por produtos aqui">
                 </li>
                 <li class="cart">
-                    <a href="#"><img src="imagens/carrinho-de-compras.png" alt="cart" /></a>
+                    <a href="#"><img src="../imagens/carrinho-de-compras.png" alt="cart" /></a>
                 </li>
             </ul>
         </nav>
     </header>
 
-    <h1 class="titulo">CARRINHO</h1>
+    <h1 class="titulo">OCASIÕES</h1>
 
-    <div class="lista-carrinho">
-        <!--Ana Paula: cada produto tem informações de nome, quem vende, preço e quantidade
-    organizados em lista. A lista será atualizada conforme mais produtos forem adicionados ao carrinho-->
-        <ul>
-            <li class="titulo-cupcake-carrinho"><b>Chocolate Peanut Butter</b></li>
-            <li>Vendido por Toronto Cupcake</li>
-            <li>R$XX,XX</li>
-            <li>Quantidade: <input type="number" class="qtdProdutos" /></li>
-            <li> <button type="submit" class="excluirProduto">Excluir item</button></li>
-            <li><hr class="hr-carrinho"></hr></li>
-        </ul>
-      
-        <!--Ana Paula: este botão exclui um item individual-->
+    <h2 class="titulo2">Uma celebração da vida, do amor e de todos os eventos memoráveis da vida</h2>
+
+    <div class="ocasioes_intro">
+        <p class="p_ocasioes_intro">Toronto Cupcake adoraria ajudar a fazer sua ocasião especial para lembrar.
+            Para casamento e noivado temos mais de 1500 combinações diferentes com nossas ofertas padrão, mas se você
+            quiser algo especial, adoraríamos fazer isso acontecer.
+            Temos muitos estandes de cupcake de tamanho e formato diferentes disponíveis para o seu uso ou podemos
+            projetar e fazer um apenas para você.<br>
+            Aniversários temáticos ou aniversários também são a moda. De Cookie Monster a The Bachelorette, fazemos de
+            tudo.</p>
     </div>
     
-    <h3 class="total-preco"><strong>Total: </strong></h3>
-    <!--Ana Paula: o resultado calculado do preço total da compra ser disponibilizado aqui-->
-    <div class="botoes-carrinho">
-        <a href="confirmar_pedido.html"><button type="submit" id="btGerarNumeroPedido">Fazer o pedido</button></a>
-        <!--Ana Paula: este botão deve redirecionar para a parte de realizar o pedido-->
-        <a href="cupcakes.html"><button>Continue comprando</button></a>
-        <!--Ana Paula: este botão deve redirecionar para a página de cupcakes para o usuário continuar as compras-->
-        <button type="submit" class="excluirProduto">Limpar</button>
-        <!--Ana Paula: este botão limpa automaticamente todos os itens da lista e a deixa vazia-->
+    <div class="flex-container">
+        <!-- <p class="p1_ocasioes">Casamentos e Compromissos</p> -->
+        <div class="div_casamentos_ocasioes">
+            <img src="../imagens/Festa.jpg" alt="bolo de casamento" width="200px" height="250px">
+            <p>Trabalharemos com você para criar uma exibição personalizada sob medida para
+                combinar com o tamanho e o estilo do seu casamento. Também podemos criar um bolo
+                de casamento exclusivo de várias camadas para ser colocado na camada superior.
+                As flores que você vê em cima desta amostra são feitas sob encomenda (neste caso
+                para combinar com o buquê da noiva) em nossa loja.</p>
+        </div>
+        <!-- <p class="p2_ocasioes">Aniversários</p> -->
+        <div class="div_aniversarios_ocasioes">
+            <img src="../imagens/happy-birthday-cake.jpg" alt="bolo de aniversario" width="200px" height="250px">
+            <p>Trabalharemos com você para criar uma exibição personalizada sob medida para
+                combinar com o tamanho e o estilo da sua festa. Também podemos criar um bolo de
+                aniversário/aniversário de várias camadas.</p>
+        </div>
     </div>
 
     <footer>
         <ul class="menu_fo">
             <li class="menu_li_fo"><a href="sobre.html">SOBRE</a></li>
             <ul class="menu_fo_icon">
-                <li class="menu_li_fo"><a href="https://twitter.com/torontocupcake"><img src="imagens/twitter.png"
+                <li class="menu_li_fo"><a href="https://twitter.com/torontocupcake"><img src="../imagens/twitter.png"
                             alt="twitter icon" /></a></li>
                 <li class="menu_li_fo"><a href="https://www.instagram.com/torontocupcake/?hl=pt"><img
-                            src="imagens/instagram.png" alt="instragram icon" /></a></li>
+                            src="../imagens/instagram.png" alt="instragram icon" /></a></li>
             </ul>
             <li class="menu_li_fo">
                 <p class="copy">&copy; 2022 Toronto Cupcake</p>
@@ -91,8 +94,6 @@
         </ul>
         <!--Ana Paula: footer com Sobre e ícones que redirecionam para redes sociais alinhados um abaixo do outro-->
     </footer>
-
-    <script src="js/index.js"></script>
 </body>
 
 </html>

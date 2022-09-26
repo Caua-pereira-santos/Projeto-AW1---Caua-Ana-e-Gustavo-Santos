@@ -9,11 +9,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
-    <link href="css/style.css" type="text/css" rel="stylesheet">
-    <title>Detalhes</title>
+    <link href="../css/style.css" type="text/css" rel="stylesheet">
+
+    <title>Confirmação do Pedido</title>
+    <!--Ana Paula: página para confirmar o pedido-->
 </head>
 
-<body>
+<body class="confirmar-pedido">
 
     <header>
         <!--Organizados os links para navegação no site através de estrutura de lista - Ana Paula-->
@@ -33,49 +35,62 @@
             <ul class="pesquisa">
                 <!--A lupa e o campo de pesquisa estão em uma lista, identificada pela classe "pesquisa"-->
                 <li class="search">
-                    <a href="#"><img src="imagens/lupa.png" alt="search" /></a>
+                    <a href="#"><img src="../imagens/lupa.png" alt="search" /></a>
                 </li>
                 <li class="search">
                     <input class="caixa_search" type="text" placeholder="Busque por produtos aqui">
                 </li>
                 <li class="cart">
-                    <a href="#"><img src="imagens/carrinho-de-compras.png" alt="cart" /></a>
+                    <a href="#"><img src="../imagens/carrinho-de-compras.png" alt="cart" /></a>
                 </li>
             </ul>
         </nav>
     </header>
 
-    <div class="modal-container">
-        <div class="modal">
-            <h4 class="titulo-cupcake">Chocolate Peanut Butter</h4>
-            <hr class="hr-detalhes" />
-            <span>
-                Cupcake de chocolate com cobertura de doce de leite
-                com chocolate em forma geométrica no topo feito à mão
-                <br><br>
-                Ingredientes: aaaaaaaaaaaaaaaaaaaaa
-                <br><br>
-                <strong>Alérgicos: contém leite e glúten</strong>
-                <br><br>
-                Valor energético: 145 kcal
-                <br><br>
-                Peso: 30 g
-            </span>
-            <div class="orgs">
-                <p>R$XX,XX</p>
-                <button type="submit" class="adcCupcake" id="adcCupcake">Adicionar ao carrinho</button>
+    <h1 class="titulo">Confirmação do pedido</h1>
+
+    <p class="p-confirmar">Confirmaremos o seu pedido por telefone. Nos informe seu nome completo, número de telefone
+        e código postal nos campos abaixo, e entraremos em contato em até 10 minutos!
+    </p>
+    <!--Ana Paula: parágrafo com breve introdução situando o usuário-->
+     
+    <h2 class="titulo-pedido">Pedido:
+        <span id="outNumeroPedido"></span>
+    </h2>
+    <div class="form-confirmacao">
+        <form action="#" method="post">
+            <!--Ana Paula: form para inserir o nome, telefone e cep-->
+            <!--Campo nome-->
+            <div class="campo-confirmar">
+                <!--Ana Paula: campo nome, com validação para receber todas as letras do alfabeto-->
+                <label for="Nome">Nome</label>
+                <input name="Nome" type="text" pattern="^[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]+$" required>
             </div>
-        </div>
+            <!--Campo Telefone-->
+            <div class="campo-confirmar">
+                <label for="telefone">Telefone</label>
+                <!--Ana Paula: campo telefone, com validação para receber 9 números de 0 até 9-->
+                <input name="Telefone" type="tel" pattern="[0-9]{9}" required />
+            </div>
+            <!--Campo Código Postal-->
+            <div class="campo-confirmar">
+                <label for="CEP">Código Postal</label>
+                <!--Ana Paula: campo código postal, com validação para o código postal canadense (6 caracacteres alfanuméricos)-->
+                <input name="CEP" placeholder="000 000" pattern="^[A-Z0-9]{3} [A-Z0-9]{3}$" required />
+            </div>
+            <!--Botão de enviar-->
+            <button type="submit">ENVIAR</button>
+        </form>
     </div>
 
     <footer>
         <ul class="menu_fo">
             <li class="menu_li_fo"><a href="sobre.html">SOBRE</a></li>
             <ul class="menu_fo_icon">
-                <li class="menu_li_fo"><a href="https://twitter.com/torontocupcake"><img src="imagens/twitter.png"
+                <li class="menu_li_fo"><a href="https://twitter.com/torontocupcake"><img src="../imagens/twitter.png"
                             alt="twitter icon" /></a></li>
                 <li class="menu_li_fo"><a href="https://www.instagram.com/torontocupcake/?hl=pt"><img
-                            src="imagens/instagram.png" alt="instragram icon" /></a></li>
+                            src="../imagens/instagram.png" alt="instragram icon" /></a></li>
             </ul>
             <li class="menu_li_fo">
                 <p class="copy">&copy; 2022 Toronto Cupcake</p>
@@ -83,5 +98,8 @@
         </ul>
         <!--Ana Paula: footer com Sobre e ícones que redirecionam para redes sociais alinhados um abaixo do outro-->
     </footer>
+
+    <script src="js/index.js"></script>
 </body>
+
 </html>

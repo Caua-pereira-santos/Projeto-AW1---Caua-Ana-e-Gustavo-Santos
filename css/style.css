@@ -535,6 +535,10 @@ span {
   margin-top: 120px;
 }
 
+.box-text:hover, .flex-item-image-title:hover, .flex-item-image-title-2:hover {
+  transform: scale(1.03);
+}
+
 .flex-container-index {
   display: flex;
   flex-flow: column wrap;
@@ -565,7 +569,7 @@ span {
 }
 
 .flex-item-image-title {
-  width: 720px;
+  width: 700px;
   background: #FFD6F5;
   height: 170px;
   margin-top: 20px;
@@ -1089,5 +1093,7 @@ font-size: 32px;
     height: 100%;
     padding: 20px;
   }
-/* Responsividade Contato - Gustavo Soares*/ 
+
 }
+
+
