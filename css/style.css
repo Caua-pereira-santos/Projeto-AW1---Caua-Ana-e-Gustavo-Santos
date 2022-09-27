@@ -124,7 +124,6 @@ body {
 .flex-container {
   display: flex;
   justify-content: space-around;
-  /* flex-wrap: wrap; */
 }
 
 .div_casamentos_ocasioes {
@@ -1011,8 +1010,7 @@ font-size: 32px;
   }
 }
 
-/* CSS para telas entre 750 e 1500px - até a linha 873 é a parte da página index*/
-/* Gustavo Soares */
+/* CSS para telas entre 750 e 1500px - Gustavo Soares */
 @media (max-width: 1500px) {
   .flex-container-index {
     margin: 0 20px;
@@ -1093,7 +1091,4 @@ font-size: 32px;
     height: 100%;
     padding: 20px;
   }
-
 }
-
-

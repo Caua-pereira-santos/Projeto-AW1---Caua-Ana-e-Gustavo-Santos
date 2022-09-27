@@ -1,5 +1,4 @@
-/* Confirmação do pedido */
-
+/* Confirmação do pedido - Ana e Gustavo*/
 if (document.body.classList.contains('confirmar-pedido')) {
   window.onload = numeroPedido();
   function numeroPedido() {
@@ -8,14 +7,13 @@ if (document.body.classList.contains('confirmar-pedido')) {
   }
 }
 
-/* Script para validação do contato */
+/* Script para validação do contato  - Gustavo */
 if (document.body.classList.contains('contato')) {
   const form = document.getElementById('form-contato');
   const campos = document.querySelectorAll('.required');
   const spans = document.querySelectorAll('.span-required');
   const emailRegex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g;
   const cellphoneRegex = /^\s*(\d{2}|\d{0})[-. ]?(\d{5}|)[-. ]?(\d{4})[-. ]?\s*$/;
-  const fields = document.querySelectorAll('.field');
   let isError = true;
 
   form.addEventListener('submit', (event) => {
@@ -28,7 +26,6 @@ if (document.body.classList.contains('contato')) {
       console.log(isError);
       form.submit();
     }
-
   })
 
   function setError(index) {
