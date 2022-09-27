@@ -368,8 +368,138 @@ body {
   font-weight: 500;
   font-size: 20px;
   text-align: justify;
-  width: 1200px;
-  margin-left: 150px;
+ 
+  margin-left: 5em;
+  margin-right: 5em;
+}
+
+/* Cupcakes - responsividade */
+
+@media (min-width: 722px) and (max-width: 1500px) {
+  .section-cupcakes {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: auto 150px 38.8px;
+    flex-wrap: wrap;
+  }
+  
+  .article-cupcakes {
+    display: flex;
+    height: 350px;
+    width: 230px;
+    background-color: rgb(255, 222, 222);
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 5px;
+    margin-top: 30px;
+  }
+  
+  .article-cupcakes:hover {
+    cursor: pointer;
+    transform: scale(1.09); 
+    box-shadow: 0 10px 10px rgba(0,0,0,0.35);
+    transition: box-shadow 0.2s ease-in-out;
+  }
+  
+  .article-cupcakes p {
+    font-size: 18px;
+    margin: 8px;
+  }
+  
+  .section-cupcakes a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  .categoria-cupcakes {
+    font-weight: 400;
+    margin-left: 120px;
+    color: #fff;
+  }
+  
+  .estilo-categoria-cupcakes {
+    background-image: linear-gradient(to right, rgb(220, 41, 251) , rgb(255, 92, 174));
+    width: 1280px;
+    height: 20px;
+    margin-left: 120px;
+    margin-bottom: 20px;
+  }
+
+  .cupcakes-intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 0 0px;
+  }
+}
+
+@media (max-width: 721px) {
+  .section-cupcakes {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin: auto 150px 38.8px;
+    flex-wrap: wrap;
+  }
+  
+  .article-cupcakes {
+    display: flex;
+    height: 350px;
+    width: 230px;
+    background-color: rgb(255, 222, 222);
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 5px;
+    margin-top: 30px;
+  }
+  
+  .article-cupcakes:hover {
+    cursor: pointer;
+    transform: scale(1.09); 
+    box-shadow: 0 10px 10px rgba(0,0,0,0.35);
+    transition: box-shadow 0.2s ease-in-out;
+  }
+  
+  .article-cupcakes p {
+    font-size: 18px;
+    margin: 8px;
+  }
+  
+  .section-cupcakes a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .estilo-categoria-cupcakes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right, rgb(220, 41, 251) , rgb(255, 92, 174));
+    width: 400px;
+    height: 20px;
+    margin-bottom: 20px;
+    margin-left: 0;
+  }
+  
+  .categoria-cupcakes {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-weight: 300;
+    color: #fff;
+  }
+
+  .cupcakes-intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 0 0px;
+  }
+  
+
 }
 
 /*Detalhes do produto*/
