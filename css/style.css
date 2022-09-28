@@ -18,6 +18,7 @@ body {
   display: flex;
   justify-content: center;
   margin-top: 25px;
+
   }
 
   #form-contato {
@@ -25,8 +26,13 @@ body {
   }
   
   form {
-    padding: 30px 30px 30px 30px;
+    padding: 30px;
   }
+
+  input {
+    width: 100%;
+  }
+
   /*Padronização dos campos Nome, Telefone, E-mail e Mensagem*/
   .campos {
     display: flex;
@@ -35,14 +41,14 @@ body {
     font-family: 'Cormorant', serif;
     font-weight: 600;
     color: white;
-
+    flex-wrap: wrap;
   }
   
   /*Padronização dos campos Nome, Telefone, E-mail e Mensagem*/
   .campo_inside {
     padding: 20px;
     width: 700px;
-    border: 2px  solid;
+    border: 2px solid;
   }
 
   /*Configuração da posição do botão enviar*/
@@ -118,7 +124,6 @@ body {
 .flex-container {
   display: flex;
   justify-content: space-around;
-  /* flex-wrap: wrap; */
 }
 
 .div_casamentos_ocasioes {
@@ -363,14 +368,143 @@ body {
   font-weight: 500;
   font-size: 20px;
   text-align: justify;
-  width: 1200px;
-  margin-left: 150px;
+ 
+  margin-left: 5em;
+  margin-right: 5em;
+}
+
+/* Cupcakes - responsividade */
+
+@media (min-width: 722px) and (max-width: 1500px) {
+  .section-cupcakes {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: auto 150px 38.8px;
+    flex-wrap: wrap;
+  }
+  
+  .article-cupcakes {
+    display: flex;
+    height: 350px;
+    width: 230px;
+    background-color: rgb(255, 222, 222);
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 5px;
+    margin-top: 30px;
+  }
+  
+  .article-cupcakes:hover {
+    cursor: pointer;
+    transform: scale(1.09); 
+    box-shadow: 0 10px 10px rgba(0,0,0,0.35);
+    transition: box-shadow 0.2s ease-in-out;
+  }
+  
+  .article-cupcakes p {
+    font-size: 18px;
+    margin: 8px;
+  }
+  
+  .section-cupcakes a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  .categoria-cupcakes {
+    font-weight: 400;
+    margin-left: 120px;
+    color: #fff;
+  }
+  
+  .estilo-categoria-cupcakes {
+    background-image: linear-gradient(to right, rgb(220, 41, 251) , rgb(255, 92, 174));
+    width: 1280px;
+    height: 20px;
+    margin-left: 120px;
+    margin-bottom: 20px;
+  }
+
+  .cupcakes-intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 0 0px;
+  }
+}
+
+@media (max-width: 721px) {
+  .section-cupcakes {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin: auto 150px 38.8px;
+    flex-wrap: wrap;
+  }
+  
+  .article-cupcakes {
+    display: flex;
+    height: 350px;
+    width: 230px;
+    background-color: rgb(255, 222, 222);
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 5px;
+    margin-top: 30px;
+  }
+  
+  .article-cupcakes:hover {
+    cursor: pointer;
+    transform: scale(1.09); 
+    box-shadow: 0 10px 10px rgba(0,0,0,0.35);
+    transition: box-shadow 0.2s ease-in-out;
+  }
+  
+  .article-cupcakes p {
+    font-size: 18px;
+    margin: 8px;
+  }
+  
+  .section-cupcakes a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .estilo-categoria-cupcakes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right, rgb(220, 41, 251) , rgb(255, 92, 174));
+    width: 400px;
+    height: 20px;
+    margin-bottom: 20px;
+    margin-left: 0;
+  }
+  
+  .categoria-cupcakes {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-weight: 300;
+    color: #fff;
+  }
+
+  .cupcakes-intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 0 0px;
+  }
+  
+
 }
 
 /*Detalhes do produto*/
 
 .modal-container hr {
-  width: 50vw;
   margin: 0;
 }
 
@@ -530,6 +664,10 @@ span {
   margin-top: 120px;
 }
 
+.box-text:hover, .flex-item-image-title:hover, .flex-item-image-title-2:hover {
+  transform: scale(1.03);
+}
+
 .flex-container-index {
   display: flex;
   flex-flow: column wrap;
@@ -560,7 +698,7 @@ span {
 }
 
 .flex-item-image-title {
-  width: 720px;
+  width: 700px;
   background: #FFD6F5;
   height: 170px;
   margin-top: 20px;
@@ -977,8 +1115,32 @@ font-size: 32px;
   }
 }
 
-/* CSS para telas entre 750 e 1500px - até a linha 873 é a parte da página index*/
-/* Gustavo Soares */
+/* Responsividade contato - Gustavo */
+@media (max-width: 750px) {
+  .campo_inside {
+    width: 500px;
+  }
+}
+
+@media (max-width: 570px) {
+  .campo_inside {
+    width: 350px;
+  }
+}
+
+@media (max-width: 420px) {
+  .campo_inside {
+    width: 250px;
+  }
+}
+
+@media (max-width: 310px) {
+  .campo_inside {
+    width: 150px;
+  }
+}
+
+/* CSS para telas entre 750 e 1500px - Gustavo Soares */
 @media (max-width: 1500px) {
   .flex-container-index {
     margin: 0 20px;
