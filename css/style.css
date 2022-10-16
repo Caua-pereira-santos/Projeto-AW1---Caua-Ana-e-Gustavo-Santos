@@ -354,13 +354,13 @@ body {
   color: #fff;
 }
 
-.estilo-categoria-cupcakes {
+/* .estilo-categoria-cupcakes {
   background-image: linear-gradient(to right, rgb(220, 41, 251) , rgb(255, 92, 174));
   width: 1280px;
   height: 20px;
   margin-left: 120px;
   margin-bottom: 20px;
-}
+} */
 
 .p-cupcakes {
   display: flex;
@@ -845,13 +845,13 @@ span {
 .p-pergunta-faqs {
   text-align: justify;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 20px;
 }
 
 .p-resposta-faqs {
   text-align: justify;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 18px;
   width: 63%;
 }
 
@@ -886,6 +886,99 @@ img {
   background-color: rgb(121, 121, 121);
   height: 0.4px;
 }
+
+/*Faqs - responsividade*/
+/*Ana Paula: responsividade para telas que vão até 721px e entre 722 e 1500px*/
+
+@media (min-width: 722px) and (max-width: 1500px) {
+  .section-faqs {
+    display: flex;
+    justify-content:left;
+    align-items: start;
+    flex-direction: column;
+    margin-left: 20%;
+  }
+
+  .article-conteudo-faqs {
+    display: flex;
+    justify-content: left;
+    align-items: start;
+    flex-direction: column;
+  }
+
+  .p-pergunta-faqs {
+    margin: 20px;
+    display: flex;
+  }
+
+  .p-resposta-faqs {
+    margin: 0 0 0 0px;
+  }
+
+  .hr1 {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+  }
+
+  .hr2 {
+    display: flex;
+    align-content: center;
+    margin: 20px;
+  }
+
+  .titulo2-faqs {
+    font-weight: 500;
+    font-size: 25px;
+    margin: 0 0 0 0px;
+    color: rgb(220, 41, 251);
+  }
+}
+
+@media (max-width: 721px) {
+  .section-faqs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .article-conteudo-faqs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .p-pergunta-faqs {
+    margin: 20px;
+    display: flex;
+  }
+
+  .p-resposta-faqs {
+    margin: 0 0 0 0px;
+  }
+
+  .hr1 {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+  }
+
+  .hr2 {
+    display: flex;
+    align-content: center;
+    margin: 20px;
+  }
+
+  .titulo2-faqs {
+    font-weight: 500;
+    font-size: 22px;
+    margin: 0 0 0 0px;
+    color: rgb(220, 41, 251)
+  }
+}
+
 
 /*Parte do CSS adicionada para o header e o menu de navegação por Ana Paula*/
 ul li a {
