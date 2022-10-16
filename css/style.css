@@ -368,13 +368,13 @@ body {
   font-weight: 500;
   font-size: 20px;
   text-align: justify;
- 
+
   margin-left: 5em;
   margin-right: 5em;
 }
 
 /* Cupcakes - responsividade */
-
+/*Ana Paula: responsividade para telas que vão até 721px e entre 722 e 1500px*/
 @media (min-width: 722px) and (max-width: 1500px) {
   .section-cupcakes {
     display: flex;
@@ -386,7 +386,7 @@ body {
   
   .article-cupcakes {
     display: flex;
-    height: 350px;
+    height: 380px;
     width: 230px;
     background-color: rgb(255, 222, 222);
     align-items: center;
@@ -405,7 +405,7 @@ body {
   
   .article-cupcakes p {
     font-size: 18px;
-    margin: 8px;
+    margin: 3px;
   }
   
   .section-cupcakes a {
@@ -414,18 +414,18 @@ body {
   }
   
   .categoria-cupcakes {
-    font-weight: 400;
+    font-weight: 700;
     margin-left: 120px;
-    color: #fff;
+    color:  rgb(220, 41, 251);
   }
   
-  .estilo-categoria-cupcakes {
+  /* .estilo-categoria-cupcakes {
     background-image: linear-gradient(to right, rgb(220, 41, 251) , rgb(255, 92, 174));
     width: 1280px;
     height: 20px;
     margin-left: 120px;
     margin-bottom: 20px;
-  }
+  } */
 
   .cupcakes-intro {
     display: flex;
@@ -440,20 +440,21 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: row;
-    margin: auto 150px 38.8px;
+    margin: auto 150px;
     flex-wrap: wrap;
   }
   
   .article-cupcakes {
     display: flex;
-    height: 350px;
+    height: 380px;
     width: 230px;
     background-color: rgb(255, 222, 222);
     align-items: center;
     flex-direction: column;
     justify-content: center;
     border-radius: 5px;
-    margin-top: 30px;
+    margin-top: 40px;
+    margin-bottom: 40px;
   }
   
   .article-cupcakes:hover {
@@ -465,7 +466,7 @@ body {
   
   .article-cupcakes p {
     font-size: 18px;
-    margin: 8px;
+    margin: 3px;
   }
   
   .section-cupcakes a {
@@ -488,8 +489,9 @@ body {
     display: flex;
     justify-content: center;
     text-align: center;
-    font-weight: 300;
-    color: #fff;
+    font-weight: 700;
+    color:  rgb(220, 41, 251);
+    margin: 0 0 0 0px;
   }
 
   .cupcakes-intro {
