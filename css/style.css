@@ -598,6 +598,11 @@ span {
   font-size: 25px;
  }
 
+ .qtdProdutos {
+  width: 100px;
+  height: 25px;
+ }
+
  .lista-carrinho button {
   display: flex;
   align-self: flex-end;
@@ -645,6 +650,42 @@ span {
   display: flex;
   justify-content: center;
 }
+
+/*Carrinho - responsividade*/
+/*Ana Paula: responsividade para telas que vão até 721px e entre 722 e 1500px*/
+
+@media (max-width: 721px) {
+
+  .lista-carrinho {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .titulo-cupcake-carrinho {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .info-item-carrinho {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .excluirProduto {
+    width: 90px;
+    height: 40px;
+  }
+
+  .qtdProdutos {
+    width: 100px;
+    height: 25px;
+  }
+
+}
+
 
  /* Index */
 .center{
