@@ -868,6 +868,73 @@ span {
   margin: 10px;
 }
 
+/* Confirmar pedido - responsividade */
+/*Ana Paula: responsividade para telas que vão até 721px e entre 722 e 1500px*/
+
+@media (min-width: 722px) and (max-width: 1500px) {
+
+  .p-confirmar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    margin-left: 7%;
+    margin-right: 7%;
+  }
+
+  .titulo-pedido {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50%;
+    margin-right: 50%;
+  }
+
+}
+
+@media (max-width: 721px) {
+
+  .p-confirmar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    margin-left: 7%;
+    margin-right: 7%;
+  }
+
+  .titulo-pedido {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40%;
+    margin-right: 45%;
+  }
+
+  form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .form-confirmacao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 0 0px;
+  }
+
+  .campo-confirmar {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left : 25%;
+    margin-right: 25%;
+  }
+
+}
+
 /* CSS para faqs */
 .titulo2-faqs {
   display: flex;
