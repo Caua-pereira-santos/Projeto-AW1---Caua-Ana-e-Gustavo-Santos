@@ -1241,7 +1241,7 @@ footer {
   margin-top: 50px;
   margin-right: 25px;
   background-color: #E91E63;
-  width:1512px;
+  width:100vw; /*Troca de px para vw para garantir que a div ocupe 100% da tela independente do tamanho da tela do usuário*/
   height: 500px;
 }
 
