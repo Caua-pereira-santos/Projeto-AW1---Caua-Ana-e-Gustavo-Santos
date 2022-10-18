@@ -933,6 +933,10 @@ span {
     margin-right: 25%;
   }
 
+  .campo-confirmar input {
+    width: 80vw;
+  }
+
 }
 
 /* CSS para faqs */
