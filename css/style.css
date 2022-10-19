@@ -686,7 +686,6 @@ span {
 
 }
 
-
  /* Index */
 .center{
  display: flex;
@@ -707,7 +706,7 @@ span {
   margin-top: 120px;
 }
 
-.box-text:hover, .flex-item-image-title:hover, .flex-item-image-title-2:hover {
+.box-text:hover, .flex-item-image-title:hover, .flex-item-image-title-2:hover, .object-fit-cover:hover {
   transform: scale(1.03);
 }
 
