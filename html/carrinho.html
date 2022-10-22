@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
     <link href="../css/style.css" type="text/css" rel="stylesheet">
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <title>Carrinho</title>
     <!--Ana Paula: página da listagem de produtos-->
 </head>
@@ -54,9 +54,9 @@
         <!--Ana Paula: cada produto tem informações de nome, quem vende, preço e quantidade
     organizados em lista. A lista será atualizada conforme mais produtos forem adicionados ao carrinho-->
         <ul>
-            <li class="titulo-cupcake-carrinho"><b>Chocolate Peanut Butter</b></li>
+            <li id="titulo-cupcake-carrinho" class="titulo-cupcake-carrinho"><b>Chocolate Peanut Butter</b></li>
             <li class="info-item-carrinho">Vendido por Toronto Cupcake</li>
-            <li class="info-item-carrinho">R$XX,XX</li>
+            <li id="preco-carrinho" class="info-item-carrinho">R$XX,XX</li>
             <li class="info-item-carrinho">Quantidade:  <input type="number" class="qtdProdutos" /></li>
             <li class="info-item-carrinho"><button type="submit" class="excluirProduto">Excluir item</button></li>
             <li class="info-item-carrinho"><hr class="hr-carrinho"></hr></li>
@@ -92,7 +92,7 @@
         <!--Ana Paula: footer com Sobre e ícones que redirecionam para redes sociais alinhados um abaixo do outro-->
     </footer>
 
-    <script src="js/index.js"></script>
+    <script src="../js/script.js"></script>
 </body>
 
 </html>

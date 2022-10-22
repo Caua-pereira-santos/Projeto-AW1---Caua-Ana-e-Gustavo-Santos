@@ -78,3 +78,55 @@ if (document.body.classList.contains('contato')) {
     }
   }
 }
+
+/* Ana Paula: detalhes do produto */
+
+let cupcakes = [
+  {
+    "desc": "AAAAAAAAA",
+    "ingr": "AAAAAAAA",
+    "alerg": "AAAAAAA",
+    "valEner": "AAAAAA",
+    "peso": "AAA",
+    "preco": "AAA"
+  },
+  {
+    "desc": "BBBBBBB",
+    "ingr": "BBBBBBB",
+    "alerg": "BBBBBBB",
+    "valEner": "BBBBB",
+    "peso": "BBB",
+    "preco": "BBB"
+  }
+]
+
+$(document).ready(function(){
+    $(".modal-container").hide();
+});
+
+$(document).ready(function(){
+  $(".article-cupcakes").click(function(){
+    $('#desc-cupcakes').text("teste");
+
+  });
+
+});
+
+/* Ana Paula: jQuery para carrinho */
+
+// var listaCarrinho = [
+//   {
+//     nome: "cupcake 1",
+//     preco: "12,00"
+//   },
+//   {
+//     nome: "cupcake 2",
+//     preco: "14,00"
+//   }
+// ];
+
+// $(document).ready(function(){
+
+//     $("#titulo-cupcake-carrinho").text(listaCarrinho[0].nome);
+
+// });

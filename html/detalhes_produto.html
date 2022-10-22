@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
     <link href="../css/style.css" type="text/css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <title>Detalhes</title>
 </head>
 
@@ -47,29 +48,29 @@
 
     <div class="modal-container"><!--Ana Paula: página para exibir os detalhes do produto, funcionando como um modal que aparece na tela, ao clicar
     em qualquer produto na página de Cupcakes-->
-        <div class="modal">
+        <div id="detalhes-produto" class="modal">
             <h4 class="titulo-cupcake">Chocolate Peanut Butter</h4>
             <hr class="hr-detalhes" />
             <span>
-                Cupcake de chocolate com cobertura de doce de leite
-                com chocolate em forma geométrica no topo feito à mão
+                <p id="desc-cupcake">Cupcake de chocolate com cobertura de doce de leite
+                com chocolate em forma geométrica no topo feito à mão</p>
                 <!--Ana Paula: descrição-->
-                <br><br>
-                Ingredientes: açúcar, leite, sacarose, farinha, chocolate em pó, fermento,
-                água, leite condensado e ovos.
+                <br>
+                <p id="ingr-cupcake">Ingredientes: açúcar, leite, sacarose, farinha, chocolate em pó, fermento,
+                água, leite condensado e ovos.</p>
                 <!--Ana Paula: ingredientes do produto-->
-                <br><br>
-                <strong>Alérgicos: contém leite e glúten</strong>
+                <br>
+                <p id="subs-cupcake"><strong>Alérgicos: contém leite e glúten</strong></p>
                 <!--Informações sobre substâncias alérgicas-->
-                <br><br>
-                Valor energético: 145 kcal
+                <br>
+                <p id="val-energ-cupcake">Valor energético: 145 kcal</p>
                 <!--Valor energético total do produto-->
-                <br><br>
-                Peso: 30 g
+                <br>
+                <p id="peso-cupcake">Peso: 30 g</p>
                 <!--Peso em gramas do produto-->
             </span>
             <div class="orgs">
-                <p>R$XX,XX</p>
+                <p class="preco-cupcake">R$XX,XX</p>
                 <button type="submit" class="adcCupcake" id="adcCupcake">Adicionar ao carrinho</button>
                 <!--Ao clicar em Adicionar ao carrinho, o produto é adicionado à lista-->
             </div>
@@ -91,5 +92,7 @@
         </ul>
         <!--Ana Paula: footer com Sobre e ícones que redirecionam para redes sociais alinhados um abaixo do outro-->
     </footer>
+
+    <script src="../js/script.js"></script>
 </body>
 </html>
