@@ -703,7 +703,6 @@ span {
   font-family: 'Cormorant', serif;
   font-weight: 400;
   font-size: 24px;
-  margin-top: 120px;
 }
 
 .box-text:hover, .flex-item-image-title:hover, .flex-item-image-title-2:hover, .object-fit-cover:hover {
@@ -1427,4 +1426,16 @@ font-size: 32px;
     height: 100%;
     padding: 20px;
   }
+}
+
+.flex-container-images {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 30px 2%;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.itens {
+  width: 20%;
 }
