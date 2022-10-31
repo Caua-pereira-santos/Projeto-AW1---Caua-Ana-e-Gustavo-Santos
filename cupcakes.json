@@ -1,0 +1,35 @@
+{
+    "cupcakes":[
+        {
+            "id": "1",
+            "nome": "Cupcake 1",
+            "desc": "Desc 1",
+            "ingr": "Ingr 1",
+            "alerg": "Alerg 1",
+            "valEnerg": "10 k",
+            "peso": "10g",
+            "preco": "R$ 10,00"
+        },
+        {
+            "id": "2",
+            "nome": "Cupcake 2",
+            "desc": "Desc 2",
+            "ingr": "Ingr 2",
+            "alerg": "Alerg 2",
+            "valEnerg": "20 k",
+            "peso": "20g",
+            "preco": "R$ 20,00"
+        },
+        {
+            "id": "3",
+            "nome": "Cupcake 3",
+            "desc": "Desc 3",
+            "ingr": "Ingr 3",
+            "alerg": "Alerg 3",
+            "valEnerg": "30 k",
+            "peso": "30g",
+            "preco": "R$ 30,00"
+        }
+    
+    ]
+}

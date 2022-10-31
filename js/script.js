@@ -81,36 +81,23 @@ if (document.body.classList.contains('contato')) {
 
 /* Ana Paula: detalhes do produto */
 
-let cupcakes = [
-  {
-    "desc": "AAAAAAAAA",
-    "ingr": "AAAAAAAA",
-    "alerg": "AAAAAAA",
-    "valEner": "AAAAAA",
-    "peso": "AAA",
-    "preco": "AAA"
-  },
-  {
-    "desc": "BBBBBBB",
-    "ingr": "BBBBBBB",
-    "alerg": "BBBBBBB",
-    "valEner": "BBBBB",
-    "peso": "BBB",
-    "preco": "BBB"
-  }
-]
-
 $(document).ready(function(){
     $(".modal-container").hide();
 });
 
 $(document).ready(function(){
   $(".article-cupcakes").click(function(){
-    $('#desc-cupcakes').text("teste");
-
+    $.getJSON("cupcakes.json" + "/json/?callback=?", function(dados){
+      let id = $(".article-cupcakes").id;
+      if (!("erro" in dados))
+      {if(id == cupcakes[0].id) {
+        $("#detalhes-produto").$("#titulo-cupcake-carrinho").val(dados[0].nome);
+      }}
+    });
   });
-
 });
+
+
 
 /* Ana Paula: jQuery para carrinho */
 
