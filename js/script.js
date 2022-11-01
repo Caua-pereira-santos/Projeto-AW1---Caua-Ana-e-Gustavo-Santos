@@ -87,13 +87,21 @@ $(document).ready(function(){
 
 $(document).ready(function(){
   $(".article-cupcakes").click(function(){
-    $.getJSON("cupcakes.json" + "/json/?callback=?", function(dados){
-      let id = $(".article-cupcakes").id;
-      if (!("erro" in dados))
-      {if(id == cupcakes[0].id) {
-        $("#detalhes-produto").$("#titulo-cupcake-carrinho").val(dados[0].nome);
-      }}
-    });
+    $.getJSON("../cupcakes.json", function(dados){
+      let id = $(".article-cupcakes").attr("id");
+      if (!("erro" in dados.cupcakes)) {
+          $.each(dados.cupcakes, function(index, value){
+            if(id == dados.cupcakes[index].id) {
+              $(".titulo-cupcake").html(value.nome);
+              $("#desc-cupcake").html(value.desc);
+              $("#ingr-cupcake").html(value.ingr);
+              $("#subs-cupcake").html(value.alerg);
+              $("#val-energ-cupcake").html(value.valEnerg);
+              $("#peso-cupcake").html(value.peso);
+              $(".preco-cupcake").html(value.preco);
+            }
+          });
+    }});
   });
 });
 
