@@ -125,3 +125,5 @@ $(document).ready(function(){
 //     $("#titulo-cupcake-carrinho").text(listaCarrinho[0].nome);
 
 // });
+
+/* Adicionar Menu Hamburger quando a tela chegar em 1127px */ 
