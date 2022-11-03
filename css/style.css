@@ -1393,12 +1393,12 @@ font-size: 32px;
     padding: 0;
   }
 
+  
+
   .flex-item-image-2 {
     width: 100%;
-    height: 535px;
     margin: 0;
     padding: 0;
-    text-align: center;
   }
 
   .flex-item-text-2 {
@@ -1458,7 +1458,7 @@ font-size: 32px;
 }
 
 .gps-style {
-  width: 700px;
+  width: 100%;
   height: 535px;
   border: 0;
 }
