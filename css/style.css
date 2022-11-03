@@ -1452,3 +1452,13 @@ font-size: 32px;
     margin: 0 2px;
   }
 }
+
+.gps-location {
+  display: none;
+}
+
+.gps-style {
+  width: 700px;
+  height: 535px;
+  border: 0;
+}

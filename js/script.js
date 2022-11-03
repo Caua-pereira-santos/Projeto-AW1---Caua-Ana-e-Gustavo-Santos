@@ -127,3 +127,19 @@ $(document).ready(function(){
 // });
 
 /* Adicionar Menu Hamburger quando a tela chegar em 1127px */ 
+
+$( ".gps" ).click(function() {
+  var texto = $('.flex-item-image-title-2').text();
+
+  if(texto == 'Mostrar localização') {
+    $('.flex-item-image-2').hide();
+    $('.gps-location').show();
+    $('.flex-item-image-title-2').text('Mostrar imagem');
+  } else {
+    $('.flex-item-image-2').show();
+    $('.gps-location').hide();
+    $('.flex-item-image-title-2').text('Mostrar localização');
+
+  }
+
+});
