@@ -85,19 +85,10 @@ $(document).ready(function(){
     $(".modal-container").hide();
 });
 
-
-document.addEventListener('click', (e) =>
-  {
-    var elementId = e.target.id;
-    console.log(elementId);
-  }
-); // Só pega se clicar no inicio do elemento "a"
-
 $(document).ready(function(){
-  $(".article-cupcakes").click(function(){
+  $('.article-cupcakes').on('click', (e) => {
     $.getJSON("../cupcakes.json", function(dados){
-      let id = this.elementId;
-      console.log(id);
+      var id = e.target.id;
       if (!("erro" in dados.cupcakes)) {
           $.each(dados.cupcakes, function(index, value){
             if(id == dados.cupcakes[index].id) {
@@ -113,8 +104,6 @@ $(document).ready(function(){
     }});
   });
 });
-
-
 
 /* Ana Paula: jQuery para carrinho */
 
