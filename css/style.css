@@ -396,13 +396,6 @@ body {
     margin-top: 30px;
   }
   
-  .article-cupcakes:hover {
-    cursor: pointer;
-    transform: scale(1.09); 
-    box-shadow: 0 10px 10px rgba(0,0,0,0.35);
-    transition: box-shadow 0.2s ease-in-out;
-  }
-  
   .article-cupcakes p {
     font-size: 18px;
     margin: 3px;
@@ -458,10 +451,10 @@ body {
   }
   
   .article-cupcakes:hover {
-    cursor: pointer;
+    /* cursor: pointer;
     transform: scale(1.09); 
     box-shadow: 0 10px 10px rgba(0,0,0,0.35);
-    transition: box-shadow 0.2s ease-in-out;
+    transition: box-shadow 0.2s ease-in-out; */
   }
   
   .article-cupcakes p {
