@@ -85,10 +85,19 @@ $(document).ready(function(){
     $(".modal-container").hide();
 });
 
+
+document.addEventListener('click', (e) =>
+  {
+    var elementId = e.target.id;
+    console.log(elementId);
+  }
+); // Só pega se clicar no inicio do elemento "a"
+
 $(document).ready(function(){
   $(".article-cupcakes").click(function(){
     $.getJSON("../cupcakes.json", function(dados){
-      let id = $(".article-cupcakes").attr("id");
+      let id = this.elementId;
+      console.log(id);
       if (!("erro" in dados.cupcakes)) {
           $.each(dados.cupcakes, function(index, value){
             if(id == dados.cupcakes[index].id) {
