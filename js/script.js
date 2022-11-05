@@ -142,3 +142,21 @@ $( ".gps" ).click(function() {
     $('.flex-item-image-title-2').text('Mostrar localização');
   }
 });
+
+var controle = window.matchMedia('(max-width: 1153px)')
+var menuMobile = $('.hamburguer-menu');
+var itemsMenu = $('.menu_li');
+
+function headerResponsivo(controleVar) {
+  if (controleVar.matches) { 
+    menuMobile.show();
+    itemsMenu.hide();
+  } else {
+    menuMobile.hide();
+    itemsMenu.show();
+  }
+}
+
+controle.addEventListener('change', headerResponsivo)
+
+headerResponsivo(controle)

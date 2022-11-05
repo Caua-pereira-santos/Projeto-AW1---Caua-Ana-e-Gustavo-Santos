@@ -1462,3 +1462,14 @@ font-size: 32px;
   height: 535px;
   border: 0;
 }
+
+.linha {
+  width: 2rem;
+  height: 0.155rem;
+  background-color: #f26fcf;
+  margin: 6px 0;
+}
+
+.hamburguer-menu {
+  display: none;
+}
