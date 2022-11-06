@@ -1139,6 +1139,32 @@ nav {
 .search {
   margin: 0 1rem;
 }
+
+#lupa {
+  margin-top: 2.5px;
+}
+
+.caixa_search {
+  background: transparent;
+  /* ?? flex: 1;  */
+  border: 0;
+  outline: none;
+  font-size: 15px;
+}
+
+.search img {
+  height: 32.19px;
+  
+}
+
+.search-bar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border-radius: 60px;
+  padding: 0px 10px;
+  background-color: #fff;
+}
 /*Termina o CSS*/
 
 .cart {
