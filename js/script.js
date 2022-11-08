@@ -92,7 +92,7 @@ $(document).ready(function(){
       if (!("erro" in dados.cupcakes)) {
           $.each(dados.cupcakes, function(index, value){
             if(id == dados.cupcakes[index].id) {
-              $(".titulo-cupcake").html(value.nome);
+              $(".titulo-cupcake").text(value.nome);
               $("#desc-cupcake").html(value.desc);
               $("#ingr-cupcake").html(value.ingr);
               $("#subs-cupcake").html(value.alerg);
@@ -106,23 +106,32 @@ $(document).ready(function(){
 });
 
 /* Ana Paula: jQuery para carrinho */
+var cupcakesList = new Array();
+$(document).ready(function(){
+  var cupcake = new Object();
+  $('.article-cupcakes').on('click', (e) => {
+    $.getJSON("../cupcakes.json", function(dados){
+      var id = e.target.id;
+      if (!("erro" in dados.cupcakes)) {
+          $.each(dados.cupcakes, function(index, value){
+            if(id == dados.cupcakes[index].id) {
+              cupcake.nome = value.nome;
+              cupcake.preco = value.preco;
+            }
+          });
+    }});
+  });
+  $('#adcCupcake').on('click', function() {
+    localStorage.setItem("cupcake", JSON.stringify(cupcake));
+    cupcakesList.push(JSON.parse(localStorage.getItem("cupcake")));
+    console.log(cupcakesList);
+    window.location.href="carrinho.html";
+  });
+});
 
-// var listaCarrinho = [
-//   {
-//     nome: "cupcake 1",
-//     preco: "12,00"
-//   },
-//   {
-//     nome: "cupcake 2",
-//     preco: "14,00"
-//   }
-// ];
-
-// $(document).ready(function(){
-
-//     $("#titulo-cupcake-carrinho").text(listaCarrinho[0].nome);
-
-// });
+$(document).ready(function(){
+  $('#titulo-cupcake-carrinho').html(cupcakesList);
+});
 
 /* Adicionar Menu Hamburger quando a tela chegar em 1127px */ 
 
