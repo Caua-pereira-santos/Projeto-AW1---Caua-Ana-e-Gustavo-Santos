@@ -133,8 +133,6 @@ $(document).ready(function(){
   $('#titulo-cupcake-carrinho').html(cupcakesList);
 });
 
-/* Adicionar Menu Hamburger quando a tela chegar em 1127px */ 
-
 /* Gustavo: jquery para alterar entre localização do gps e imagem */
 $( ".gps" ).click(function() {
   var texto = $('.flex-item-image-title-2').text();

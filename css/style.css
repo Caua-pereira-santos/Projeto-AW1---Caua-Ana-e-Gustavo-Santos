@@ -1131,6 +1131,11 @@ nav {
   color: #f26fcf;
 }
 
+.logo-center{
+  display: flex;
+  align-items: center;
+}
+
 .pesquisa {
   display: flex;
   justify-content: center;
@@ -1138,6 +1143,30 @@ nav {
 
 .search {
   margin: 0 1rem;
+}
+
+#lupa {
+  margin-top: 2.5px;
+}
+
+.caixa_search {
+  background: transparent;
+  border: 0;
+  outline: none;
+  font-size: 15px;
+}
+
+.search img {
+  height: 32.19px;
+}
+
+.search-bar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border-radius: 60px;
+  padding: 0px 10px;
+  background-color: #fff;
 }
 /*Termina o CSS*/
 
@@ -1460,9 +1489,56 @@ font-size: 32px;
   width: 2rem;
   height: 0.155rem;
   background-color: #f26fcf;
-  margin: 6px 0;
+  margin: 10px 0;
 }
 
 .hamburguer-menu {
   display: none;
+}
+
+@media (max-width: 780px) {
+  header {
+    padding: 30px 15px;
+  }
+  nav {
+    margin: auto 50px;
+  }
+}
+
+@media (max-width: 1553px) {
+  nav {
+    justify-content: space-evenly;
+  }
+}
+
+@media (max-width: 470px) {
+  .logo {
+    font-size: 12px;
+  }
+  .search-bar {
+    padding: 0;
+  }
+
+  .cart img {
+    height: 70%; 
+    width: 70%;
+    margin-top: 28%;
+  }
+
+  .cart {
+    margin: 0 6px;
+  }
+
+  #lupa {
+    height: 1.25rem; 
+    width: 1.25rem;
+  }
+
+  header {
+    padding: 30px 5px;
+  }
+
+  nav {
+    margin: auto 25px;
+  }
 }
