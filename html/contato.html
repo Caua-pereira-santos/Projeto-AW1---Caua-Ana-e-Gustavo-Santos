@@ -10,8 +10,30 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
     <link href="../css/style.css" type="text/css" rel="stylesheet">
-
+    <script type="text/javascript" src="js/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="js/localization/messages_pt_BR.js"></script>
     <title>Contato</title>
+
+
+    <script type="text/javascript">
+        $(document) .ready(function() {
+         $("$formCadastro").validate({
+            rules: {
+                nome: {
+                    required: true,
+                    maxlength: 100,
+                    minlength: 10
+                },
+                email: {
+                    required: true,
+                    email: true
+                }
+            }
+         })
+
+
+        })
+    </script>
 </head>
 
 <body class="contato">
@@ -46,17 +68,19 @@
         </nav>
     </header>
 
+   
+
     <!--Titulo que irá aparecer no centro da página-->
     <h1 class="titulo">CONTATO</h1>
 
     <!--Classe responsável pela configuração do forms-->
     <div class="formulario">
-        <form action="#" method="post" id="form-contato">
+        <form name="formCadastro" form action="#" method="post" id="form-contato">
 
             <!--Campo nome-->
             <div class="campos">
                 <label for="Nome">Nome</label>
-                <input name="Nome" class="campo_inside field required" type="name" oninput="validarNome()">
+               <!-- <input name="Nome" class="campo_inside field required" type="name" oninput="validarNome()"> -->
                 <div class="flexbox-container-contact">
                     <span class="span-required">O campo nome deve ter no mínimo 3 caracteres</span>
                 </div>
@@ -74,7 +98,7 @@
             <!--Campo E-mail-->
             <div class="campos">
                 <label for="email">E-mail</label>
-                <input name="Email" class="campo_inside field required" type="email" oninput="validarEmail()">
+               <!--- <input name="Email" class="campo_inside field required" type="email" oninput="validarEmail()"> -->
                 <div class="flexbox-container-contact">
                     <span class="span-required">Digite um e-mail válido, exemplo: nome@email.com</span>
                 </div>

@@ -7,8 +7,31 @@ if (document.body.classList.contains('confirmar-pedido')) {
   }
 }
 
+/*Teste Jquery para validação*/ 
+
+<script type="text/javascript">
+$(document) .ready(function() {
+ $("$formCadastro").validate({
+    rules: {
+        nome: {
+            required: true,
+            maxlength: 100,
+            minlength: 10
+        },
+        email: {
+            required: true,
+            email: true
+        }
+    }
+ })
+
+
+})
+</script>
+
 /* Script para validação do contato  - Gustavo */
-if (document.body.classList.contains('contato')) {
+
+/*if (document.body.classList.contains('contato')) {
   const form = document.getElementById('form-contato');
   const campos = document.querySelectorAll('.required');
   const spans = document.querySelectorAll('.span-required');
@@ -77,7 +100,7 @@ if (document.body.classList.contains('contato')) {
       removeError(3);
     }
   }
-}
+}  
 
 /* Ana Paula: detalhes do produto */
 
