@@ -187,4 +187,36 @@ function headerResponsivo(controleVar) {
 
 controle.addEventListener('change', headerResponsivo)
 
-headerResponsivo(controle)
+headerResponsivo(controle);
+
+// const search = document.getElementById('search');
+// const matchList = document.getElementById('match-list');
+
+// const searchStates = async searchText => {
+//   const res = await fetch('../cupcakes.json');
+//   const teste = await res.json();
+//   const states = Object.values(teste);
+//   // console.log(Object.values(states));
+
+//   // console.log(JSON.stringify(states));
+
+ 
+//   // console.log(states);
+
+//   let matches = states.filter(state => {
+
+//     const regex = new RegExp(`^${searchText}`, 'gi');
+//     // console.log(state.name);
+//     return state.nome.match(regex) || state.abbr.match(regex);
+//   });
+
+//   if (searchText.length === 0) {
+//     matches = [];
+//   }
+
+//   outputHtml(matches);
+
+//   // console.log(matches);
+// }
+
+// search.addEventListener('input', () => searchStates(search.value));
