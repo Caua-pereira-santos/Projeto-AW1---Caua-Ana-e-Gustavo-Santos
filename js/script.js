@@ -7,27 +7,27 @@ if (document.body.classList.contains('confirmar-pedido')) {
   }
 }
 
-/*Teste Jquery para validação*/ 
+// /*Teste Jquery para validação*/ 
 
-<script type="text/javascript">
-$(document) .ready(function() {
- $("$formCadastro").validate({
-    rules: {
-        nome: {
-            required: true,
-            maxlength: 100,
-            minlength: 10
-        },
-        email: {
-            required: true,
-            email: true
-        }
-    }
- })
+// <script type="text/javascript">
+// $(document) .ready(function() {
+//  $("$formCadastro").validate({
+//     rules: {
+//         nome: {
+//             required: true,
+//             maxlength: 100,
+//             minlength: 10
+//         },
+//         email: {
+//             required: true,
+//             email: true
+//         }
+//     }
+//  })
 
 
-})
-</script>
+// })
+// </script>
 
 /* Script para validação do contato  - Gustavo */
 
@@ -129,31 +129,43 @@ $(document).ready(function(){
 });
 
 /* Ana Paula: jQuery para carrinho */
+
+Storage.prototype.setObj = function(key, obj) {
+  return this.setItem(key, JSON.stringify(obj))
+}
+Storage.prototype.getObj = function(key) {
+  return JSON.stringify(this.getItem(key))
+}
+
 var cupcakesList = new Array();
+var cupcake = new Object();
 $(document).ready(function(){
-  var cupcake = new Object();
   $('.article-cupcakes').on('click', (e) => {
     $.getJSON("../cupcakes.json", function(dados){
       var id = e.target.id;
       if (!("erro" in dados.cupcakes)) {
           $.each(dados.cupcakes, function(index, value){
             if(id == dados.cupcakes[index].id) {
+              cupcake.id = value.id;
               cupcake.nome = value.nome;
               cupcake.preco = value.preco;
+              cupcakesList.push(cupcake);
             }
           });
     }});
   });
   $('#adcCupcake').on('click', function() {
-    localStorage.setItem("cupcake", JSON.stringify(cupcake));
-    cupcakesList.push(JSON.parse(localStorage.getItem("cupcake")));
-    console.log(cupcakesList);
-    window.location.href="carrinho.html";
+    localStorage.setObj(cupcake.id, cupcake);
+    console.log(localStorage.getItem(cupcake.id));
+    // window.location.href="carrinho.html";
   });
 });
 
 $(document).ready(function(){
-  $('#titulo-cupcake-carrinho').html(cupcakesList);
+
+ for(var i = 1; i<=3; ++i){
+    $('#titulo-cupcake-carrinho').append("<br/>"+localStorage.getItem(i));
+  }
 });
 
 /* Gustavo: jquery para alterar entre localização do gps e imagem */
