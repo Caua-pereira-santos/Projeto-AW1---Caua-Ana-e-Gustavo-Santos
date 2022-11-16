@@ -1,3 +1,6 @@
+
+
+
 * {
   list-style-type: none;
   padding: 0;
@@ -1213,33 +1216,33 @@ footer {
   justify-content: center;
 }
 
-/*Css Parceiros*/
+/*Css Parceiros - Cauã*/
 
 /*Configuração do nome central parceiros -- Cauã*/
-.titulo-parceiros {
+.titulo-parceiros { 
   display: flex;
-  color: #e91e63;
-  text-align: center;
+  color: #e91e63; /*Define cor como rosa*/
+  text-align: center; /*Alinha o texto no centro da pg*/
   justify-content: center;
-  margin-top: 20px;
-  font-family: 'Cormorant';
-  font-weight: 900;
+  margin-top: 20px; /*Coloca o titulo a 20px do topo da pg*/
+  font-family: 'Cormorant'; /*Definição da fonte*/
+  font-weight: 900; /*Tamanho da fonte*/
 }
 
-.Textparceiros {
+.Textparceiros { /*Configuração do texto pg parceiros*/
   
     display: flex;
     text-align: center;
     justify-content: center;
 }
 
-.titulo-parceiros2 {
-  display: flex;
+.titulo-parceiros2 { /*Configuração do segundo titulo (Empresas parceiras)*/
+  display: flex; /* os elementos ficam em linha, um do lado do outro.*/
   text-align: center;
   justify-content: center;
 }
 
-.titulo-parceiros2 p {
+.titulo-parceiros2 p { /*Definie cores e local do segundo titulo e para não entrar em conflito com a configuração anterior ela só ira ser acionada caso estiver aops um paragrafo*/
   display: flex;
   text-align: center;
   justify-content: center;
@@ -1249,36 +1252,37 @@ footer {
   color: #E91E63;
 }
 
-/*Css Sobre*/
-.titulo-sobre {
-  display: flex;
+/*Css Sobre - Cauã */
+
+.titulo-sobre { /*Configuração do titulo de sobre*/
+  display: flex; /* os elementos ficam em linha, um do lado do outro.*/
   color: #e91e63;
   text-align: center;
   justify-content: center;
-  margin-top: 20px;
-  font-family: 'Cormorant';
-  font-weight: 900;
+  margin-top: 20px; /*Coloca o titulo 20px abaixo do topo*/
+  font-family: 'Cormorant'; /*Configuração de fonte*/
+  font-weight: 900; /*Tamanho da fonte*/
 }
 
-.sobre-div {
-  display: flex;
+.sobre-div { /*Configuração das divs pg sobre. div rosa (michelle)*/
+  display: flex; /* os elementos ficam em linha, um do lado do outro. */
   justify-content: center;
   margin-bottom:20px;
   margin-top: 50px;
   margin-right: 25px;
   background-color: #E91E63;
   width:100vw; /*Troca de px para vw para garantir que a div ocupe 100% da tela independente do tamanho da tela do usuário*/
-  height: 500px;
+  height: 500px; /*Altura da div*/
 }
 
-.sobre-div-2 {
+.sobre-div-2 { /*Configuração da segunda div da pg sobre*/
   display: flex;
   justify-content: center;
   margin-bottom:20px;
   margin-top: 50px;
   margin-right: 25px;
   background-color: white;
-  width:1512px;
+  width:100vw; /*Troca de px para vw para garantir que a div ocupe 100% da tela*/
   height: 500px;
 }
 
@@ -1300,7 +1304,7 @@ text-align: center;
 font-size: 32px;
 }
 
-.li-imagem {
+.li-imagem { /*Define tamanho, largura e posição da imagem (michelle)*/
   width:450px;
   height:450px;
   margin-top: 20px;
@@ -1308,7 +1312,7 @@ font-size: 32px;
   margin-left: 100px;      
 }
 
-.li-imagem-2 {
+.li-imagem-2 { /*Define tamanho, largura e posição da imagem (cupcake)*/
   width:450px;
   height:400px;
   margin-top: 20px;
@@ -1317,7 +1321,7 @@ font-size: 32px;
   margin-right: 50px;    
 }
 
-.li-textos {
+.li-textos { /*Configuração do texto que aparece na pg sobre*/
   width: 700px;
   padding: 5px;
   height: 450px;
@@ -1539,3 +1543,11 @@ font-size: 32px;
     margin: auto 25px;
   }
 }
+
+
+
+
+
+
+
+
