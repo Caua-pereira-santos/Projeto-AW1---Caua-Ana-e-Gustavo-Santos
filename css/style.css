@@ -72,6 +72,14 @@ body {
     color: white;
   }
 
+  .botao_contato:hover{
+    transform:scale(1.25,1.25);
+  }
+  
+  .botao_contato:hover::after{
+    opacity:1;
+  }
+
   /*Configuração do titulo (Contato) que irá aparecer na página*/
   .titulo{
     display: flex;
