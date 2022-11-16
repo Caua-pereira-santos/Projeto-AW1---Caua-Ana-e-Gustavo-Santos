@@ -72,7 +72,7 @@ body {
     color: white;
   }
 
-  .botao_contato:hover{
+  .botao_contato:hover{ /*Hoover botão contato - Cauã*/
     transform:scale(1.25,1.25);
   }
   
@@ -1552,8 +1552,26 @@ font-size: 32px;
   }
 }
 
+/*Efeito hoover - Cauã Santos*/
 
+.menu_li:hover{ /*Efeito para deixar os links brancos quando passar o mouse*/
+  color: white;
+}
 
+.menu_li:hover::after{
+  opacity:1;
+  
+}
+
+.menu_li_fo:hover{
+  color: white;
+}
+
+.menu_li_fo::after{
+  opacity: 1;
+}
+
+ 
 
 
 
