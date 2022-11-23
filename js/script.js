@@ -137,7 +137,7 @@ $(document).ready(function(){
   $('#adcCupcake').on('click', function() {
     localStorage.setObj(cupcake.id, cupcake);
     console.log(localStorage.getItem(cupcake.id));
-    // window.location.href="carrinho.html";
+    window.location.href="carrinho.html";
   });
 });
 
