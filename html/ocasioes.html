@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
     <link href="../css/style.css" type="text/css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 
     <title>Ocasiões</title>
 </head>
@@ -19,7 +20,9 @@
     <header>
         <!--Organizados os links para navegação no site através de estrutura de lista - Ana Paula-->
         <nav>
-            <a href="index.html" class="logo">TORONTO CUPCAKE</a>
+            <div class="logo-center">
+                <a href="index.html" class="logo">TORONTO CUPCAKE</a>
+            </div>
             <!--Nome do site é um link e leva até a Home, a página principal-->
             <ul class="menu_topics">
                 <!--Lista identificada pela classe menu_topics-->
@@ -33,17 +36,52 @@
 
             <ul class="pesquisa">
                 <!--A lupa e o campo de pesquisa estão em uma lista, identificada pela classe "pesquisa"-->
+              
+            <div class="search-bar">
                 <li class="search">
-                    <a href="#"><img src="../imagens/lupa.png" alt="search" /></a>
+                    <input class="caixa_search" name="search" id="search" type="text" placeholder="Busque por produtos aqui">
                 </li>
                 <li class="search">
-                    <input class="caixa_search" type="text" placeholder="Busque por produtos aqui">
+                    <a href="#"><img src="../imagens/lupa.png" alt="search" id="lupa" /></a>
                 </li>
+            </div>
+            <div id="match-list"></div>
                 <li class="cart">
                     <a href="#"><img src="../imagens/carrinho-de-compras.png" alt="cart" /></a>
                 </li>
             </ul>
+
+            <div class="hamburguer-menu">
+                <div class="linha"></div>
+                <div class="linha"></div>
+                <div class="linha"></div>
+            </div>
+
         </nav>
+        <div class="hamburguer">
+            <ul>
+                <li>
+                    <a href="cupcakes.html">CUPCAKES</a>
+                </li>
+
+                <li>
+                    <a href="ocasioes.html">OCASIÕES</a>
+                </li>
+
+                <li>
+                    <a href="faqs.html">FAQs</a>
+                </li>
+
+                <li>
+                    <a href="contato.html">CONTATO</a>
+                </li>
+
+                <li>
+                    <a href="parceiros.html">PARCEIROS</a>
+                </li>
+            
+            </ul>
+        </div>
     </header>
 
     <h1 class="titulo">OCASIÕES</h1><!--Ana Paula: página de Ocasiões, para tratar situações mais específicas de atuação da Toronto Cupcake-->
@@ -96,6 +134,7 @@
         </ul>
         <!--Ana Paula: footer com Sobre e ícones que redirecionam para redes sociais alinhados um abaixo do outro-->
     </footer>
+    <script src="../js/script.js"></script>
 </body>
 
 </html>

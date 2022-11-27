@@ -164,6 +164,7 @@ $( ".gps" ).click(function() {
 });
 
 var controle = window.matchMedia('(max-width: 1153px)')
+const hamburguer = document.querySelector(".hamburguer-menu");
 var menuMobile = $('.hamburguer-menu');
 var itemsMenu = $('.menu_li');
 
@@ -174,6 +175,7 @@ function headerResponsivo(controleVar) {
   } else {
     menuMobile.hide();
     itemsMenu.show();
+    $('.hamburguer').hide();
   }
 }
 
@@ -181,13 +183,13 @@ controle.addEventListener('change', headerResponsivo)
 
 headerResponsivo(controle);
 
-const hamburguer = document.querySelector(".hamburguer-menu");
-const navMenu = document.querySelector("nav");
-
 hamburguer.addEventListener("click", () => {
   hamburguer.classList.toggle("active");
   $('.hamburguer').toggle()
 })
+
+
+
 // const search = document.getElementById('search');
 // const matchList = document.getElementById('match-list');
 
