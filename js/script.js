@@ -181,6 +181,13 @@ controle.addEventListener('change', headerResponsivo)
 
 headerResponsivo(controle);
 
+const hamburguer = document.querySelector(".hamburguer-menu");
+const navMenu = document.querySelector("nav");
+
+hamburguer.addEventListener("click", () => {
+  hamburguer.classList.toggle("active");
+  $('.hamburguer').toggle()
+})
 // const search = document.getElementById('search');
 // const matchList = document.getElementById('match-list');
 

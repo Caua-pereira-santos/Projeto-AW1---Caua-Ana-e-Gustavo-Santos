@@ -1570,7 +1570,25 @@ font-size: 32px;
   opacity: 1;
 }
 
- 
+.hamburguer{
+  display: none;
+  margin-top: 2rem;
+  float: left;
+  color: rgb(141, 140, 140);
+}
+
+.hamburguer ul li {
+  margin-top: 10px;
+  margin-left: 50px;
+  color: #f26fcf;
+  cursor:pointer;
+
+}
+
+.bar {
+  display: block;
+  margin: 5px auto;
+}
 
 
 
