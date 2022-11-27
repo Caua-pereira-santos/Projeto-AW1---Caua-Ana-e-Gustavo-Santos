@@ -701,8 +701,8 @@ span {
   display: flex;
   align-items: center; /*centraliza horizontalmente */
   justify-content: center; /*cetraliza verticalmente */
-  width: 800px;
-  height: 100px;
+  width: 55rem;
+  height: 10rem;
   background: #FFD6F5;
   color: rgb(0, 0, 0);
   font-family: 'Cormorant', serif;
@@ -807,7 +807,7 @@ span {
   color: #E91E63;
   font-size: 32px;
   font-weight: 300;
-  margin: 25px 25px;
+  margin: 25px;
 }
 
 .small-box {
@@ -1348,15 +1348,6 @@ font-size: 32px;
   }
 }
 
-@media (max-width: 294px) {
-  .secondary-title{
-    color: #E91E63;
-    font-size: 20px;
-    font-weight: 300;
-    margin: 25px 25px;
-  }
-}
-
 /* Responsividade contato - Gustavo */
 @media (max-width: 750px) {
   .campo_inside {
@@ -1459,11 +1450,32 @@ font-size: 32px;
   }
 
   .box-text {
-    width: 100%;
-    height: 100%;
-    padding: 20px;
+    justify-content: center;
+    display: flex;
+    
   }
 }
+
+@media (max-width: 912px) {
+  .box-text {
+    width: 35rem;
+    height: 10rem;  
+  }
+} 
+
+@media (max-width: 604px) {
+  .box-text {
+    width: 25rem;
+    height: 10rem;  
+  }
+} 
+
+@media (max-width: 438px) {
+  .box-text {
+    width: 15rem;
+    height: 10rem;  
+  }
+} 
 
 .flex-container-images {
   margin: 20px;
