@@ -13,6 +13,7 @@
 body {
   padding-bottom: 10;
   margin: 0;
+  padding-top: 100px;
 }
 
  /* css para contato linha 3 até 62 */
@@ -1465,15 +1466,13 @@ font-size: 32px;
 }
 
 .flex-container-images {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 30px 2%;
-  justify-content: center;
-  gap: 2rem;
+  margin: 20px;
 }
 
-.itens {
-  width: 20%;
+.itens img{
+  max-width: 1865px;
+  max-height: 600px;
+  height: auto;
 }
 
 @media (max-width: 1189px) {
