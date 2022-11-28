@@ -39,16 +39,22 @@
 
             <ul class="pesquisa">
                 <!--A lupa e o campo de pesquisa estão em uma lista, identificada pela classe "pesquisa"-->
-              
-            <div class="search-bar">
-                <li class="search">
-                    <input class="caixa_search" name="search" id="search" type="text" placeholder="Busque por produtos aqui">
-                </li>
-                <li class="search">
-                    <a href="#"><img src="../imagens/lupa.png" alt="search" id="lupa" /></a>
-                </li>
-            </div>
-            <div id="match-list"></div>
+
+                <div class="search-bar">
+                    <li class="search">
+                        <input class="caixa_search" name="search" id="search" type="text"
+                            placeholder="Busque por produtos aqui">
+                    </li>
+
+                    <div class="list-group" id="list"></div>
+
+                    <div class="search">
+                        <a href="#"><img src="../imagens/lupa.png" alt="search" id="lupa" /></a>
+                    </div>
+             
+                </div>
+
+                <!-- <div id="match-list"></div> -->
                 <li class="cart">
                     <a href="#"><img src="../imagens/carrinho-de-compras.png" alt="cart" /></a>
                 </li>
@@ -82,11 +88,10 @@
                 <li>
                     <a href="parceiros.html">PARCEIROS</a>
                 </li>
-            
+
             </ul>
         </div>
     </header>
-
     <div class="modal-container"><!--Ana Paula: página para exibir os detalhes do produto, funcionando como um modal que aparece na tela, ao clicar
         em qualquer produto na página de Cupcakes-->
             <div id="detalhes-produto" class="modal">

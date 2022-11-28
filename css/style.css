@@ -1679,6 +1679,9 @@ font-size: 32px;
   justify-content: center;
 }
 
+.list-group  {
+  display: flex;
+}
 
 
 
