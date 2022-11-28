@@ -201,6 +201,22 @@ hamburguer.addEventListener("click", () => {
   (retire os comentários do objeto cupcake...) - Gustavo
 */
 
+// var request = new XMLHttpRequest();
+// request.open('GET', '../cupcakes.json')
+// request.onload = function() {
+//   localStorage.setObj("cupcakes", request.responseText);
+// };
+// request.send();
+
+// fetch("../cupcakes.json")
+// .then(response => response.json())
+// .then(cupcakes => showInfo(cupcakes));
+
+// function showInfo(cupcakes) {
+//   console.table(cupcakes.nome);
+// }
+
+
 const list = document.getElementById('list');
 
 function setList(group) {
@@ -232,8 +248,6 @@ function naoEncontrado() {
   list.appendChild(item);
 }
 
-
-
 function filtrarPorRelavancia(value, searchTerm) {
   if (value === searchTerm) {
     return 2;
@@ -249,6 +263,10 @@ function filtrarPorRelavancia(value, searchTerm) {
 const searchInput = document.getElementById('search');
 
 searchInput.addEventListener('input', (event) => {
+
+  //  let cupcakes = localStorage.getObj("cupcakes");
+  //  console.log(cupcakes);
+
   let value = event.target.value;
   if (value && value.trim().length > 0) {
     value = value.trim();
