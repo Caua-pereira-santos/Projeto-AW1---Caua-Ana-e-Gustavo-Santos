@@ -710,7 +710,7 @@ span {
   font-size: 24px;
 }
 
-.box-text:hover, .flex-item-image-title:hover, .flex-item-image-title-2:hover, .object-fit-cover:hover {
+.box-text:hover, .flex-item-image-title:hover, .flex-item-image-title-2:hover, .object-fit-cover:hover, .box-order:hover {
   transform: scale(1.03);
 }
 
@@ -1602,6 +1602,27 @@ font-size: 32px;
 .bar {
   display: block;
   margin: 5px auto;
+}
+
+.video {
+  margin: 3rem 5rem 2rem 5rem;
+  width: 50rem;
+  height: 30rem;
+  border-radius: 8%;
+}
+
+.box-order {
+  background: #FFD6F5;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-size: 32px;
+  padding: 1rem 0;
+  width: 42%;
+}
+
+.center-box {
+  display: flex;
+  justify-content: center;
 }
 
 
