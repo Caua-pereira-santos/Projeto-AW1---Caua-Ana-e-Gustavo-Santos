@@ -1606,9 +1606,63 @@ font-size: 32px;
 
 .video {
   margin: 3rem 5rem 2rem 5rem;
-  width: 50rem;
-  height: 30rem;
+  width: 800px;
+  height: 480px;
   border-radius: 8%;
+}
+
+.center-video {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 875px) {
+  .video {
+    width: 40rem;
+    height: 20rem;
+  }
+}
+
+@media (max-width: 620px) {
+  .video {
+    width: 38rem;
+    height: 18rem;
+  }
+}
+
+@media (max-width: 555px) {
+  .video {
+    width: 36rem;
+    height: 16rem;
+  }
+}
+
+@media (max-width: 495px) {
+  .video {
+    width: 34rem;
+    height: 14rem;
+  }
+}
+
+  @media (max-width: 429px) {
+    .video {
+      width: 32rem;
+      height: 12rem;
+    }
+}
+
+@media (max-width: 360px) {
+  .video {
+    width: 30rem;
+    height: 10rem;
+  }
+}
+
+@media (max-width: 310px) {
+  .video {
+    width: 27rem;
+    height: 7rem;
+  }
 }
 
 .box-order {
