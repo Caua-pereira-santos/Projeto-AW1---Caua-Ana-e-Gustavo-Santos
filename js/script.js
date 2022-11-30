@@ -86,7 +86,7 @@ if (document.body.classList.contains('contato')) {
 
 $(document).ready(function(){
     $(".modal-container").hide();
-});
+});/*Ana Paula: hide esconde o código html do modal que está na página de cupcakes para que não apareça junto aos produtos*/ 
 
 $(document).ready(function(){
   $('.article-cupcakes').on('click', (e) => {
@@ -106,7 +106,9 @@ $(document).ready(function(){
           });
     }});
   });
-});
+});/*Ana Paula: ao clicar em um article de um cupcake, é feita uma requisição get no arquivo cupcakes.json para retornar os seus dados.
+O id do article é capturado, e por meio da funçãp each, os ids dos cupcakes do arquivo json são acessados para comparar com o id do article.
+Se o id do article for o mesmo id de um cupcake, no modal serão exibidas as informações desse determinado cupcake, armazenadas no arquivo json*/ 
 
 /* Ana Paula: jQuery para carrinho */
 
